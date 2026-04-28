@@ -33,40 +33,26 @@ let _syncStatus = 'loading';
 const _listeners = [];
 function onSyncStatus(fn) { _listeners.push(fn); }
 function _notify(s) { _syncStatus = s; _listeners.forEach(fn => fn(s)); }
-
-// Apps Script requires form-encoded POST (not JSON) when called from a local file
-// GET works fine with cors mode
 async function syncLoad() {
-  // Seed from localStorage immediately so UI is never blank
   try { const l = localStorage.getItem('ams_cache'); if (l) _cache = JSON.parse(l); } catch(_) {}
   _loaded = true;
   _notify('loading');
-  // Then fetch from sheet and merge
   try {
     const res = await fetch(SCRIPT_URL + '?action=getAll', {method:'GET', mode:'cors'});
     const data = await res.json();
     _cache = Object.assign({}, _cache, data);
     try { localStorage.setItem('ams_cache', JSON.stringify(_cache)); } catch(_) {}
     _notify('ok');
-  } catch(e) {
-    _notify('offline');
-  }
+  } catch(e) { _notify('offline'); }
 }
-
 function syncGet(key) { return _cache[key] || ''; }
-
 function syncSet(key, value) {
   _cache[key] = value;
   try { localStorage.setItem('ams_cache', JSON.stringify(_cache)); } catch(_) {}
-  // Send as form-encoded — the only reliable cross-origin POST format for Apps Script
   const body = new URLSearchParams({action:'set', key, value});
-  fetch(SCRIPT_URL, {
-    method:'POST',
-    mode:'no-cors',
-    body
-  }).then(()=>_notify('ok')).catch(()=>_notify('offline'));
+  fetch(SCRIPT_URL, {method:'POST', mode:'no-cors', body})
+    .then(()=>_notify('ok')).catch(()=>_notify('offline'));
 }
-
 syncLoad();
 
 const WEEKS = [
@@ -1191,6 +1177,19 @@ const s = {
   dExNotes:  { fontSize:11, fontStyle:"italic", color:"#6B7280", lineHeight:1.6, marginBottom:8 },
   dInputRow: { display:"flex", gap:8, marginTop:6 },
   dRec:      { display:"flex", alignItems:"center", gap:8, margin:"6px 0 2px", padding:"7px 10px", background:"#EFF6FF", border:"1px solid #BFDBFE", borderRadius:6 },
+  dRunLog:   { marginTop:12 },
+  dRunInputs:{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:8, marginTop:6 },
+  dRunField: { display:"flex", flexDirection:"column", gap:4 },
+  dRunLbl:   { fontSize:9, fontWeight:700, color:"#6B7280", letterSpacing:2, textTransform:"uppercase" },
+  dRunInput: { background:"#FFFFFF", border:"1px solid #D1D5DB", borderRadius:6, padding:"10px 12px", fontSize:14, color:"#111827", outline:"none", fontFamily:"Arial,sans-serif", fontWeight:600 },
+  dRunInput2:{ background:"#FFFFFF", border:"1px solid #D1D5DB", borderRadius:6, padding:"10px 12px", fontSize:14, color:"#111827", outline:"none", fontFamily:"Arial,sans-serif" },
+  wkSummary: { margin:"0 16px 12px", background:"#F0FDF4", border:"1px solid #BBF7D0", borderRadius:8, padding:"12px 14px" },
+  wkSumTitle:{ fontSize:9, fontWeight:700, color:"#16A34A", letterSpacing:2, textTransform:"uppercase", marginBottom:8 },
+  wkSumGrid: { display:"grid", gridTemplateColumns:"1fr 1fr", gap:8 },
+  wkSumItem: { display:"flex", flexDirection:"column" },
+  wkSumLbl:  { fontSize:9, color:"#6B7280", letterSpacing:1, textTransform:"uppercase" },
+  wkSumVal:  { fontSize:20, fontWeight:800, color:"#15803D", lineHeight:1.2 },
+  wkSumSub:  { fontSize:10, color:"#6B7280", marginTop:1 },
   dRecLbl:   { fontSize:10, color:"#6B7280", flex:1 },
   dRecVal:   { fontSize:15, fontWeight:800, color:"#1D4ED8", letterSpacing:0.5 },
   dRecSub:   { fontSize:9, color:"#93C5FD", marginTop:1 },
@@ -1347,6 +1346,41 @@ function DayDrawer({ w, day, onClose }) {
             <div style={s.dPht}><strong style={{color:"#ff6b35"}}>⚠ PHT:</strong> {w.phtNote}</div>
           )}
           {day.detail && <div style={s.dDetailBox}>{day.detail}</div>}
+          {day.type === "RUN" && (() => {
+            const sk = "run_"+w.week+"_"+day.day+"_"+day.label.replace(/[^a-z0-9]/gi,'_');
+            return (
+              <div style={s.dRunLog}>
+                <div style={s.dSection}>Log This Run</div>
+                <div style={s.dRunInputs}>
+                  <div style={s.dRunField}>
+                    <label style={s.dRunLbl}>Actual Time</label>
+                    <input style={s.dRunInput} type="text" placeholder="e.g. 47:32"
+                      value={getVal(sk,'time')} onChange={ev => setVal(sk,'time',ev.target.value)} />
+                  </div>
+                  <div style={s.dRunField}>
+                    <label style={s.dRunLbl}>Actual Distance</label>
+                    <input style={s.dRunInput} type="text" placeholder="e.g. 9.2 km"
+                      value={getVal(sk,'dist')} onChange={ev => setVal(sk,'dist',ev.target.value)} />
+                  </div>
+                  <div style={s.dRunField}>
+                    <label style={s.dRunLbl}>Avg Pace</label>
+                    <input style={s.dRunInput} type="text" placeholder="e.g. 5:08/km"
+                      value={getVal(sk,'pace')} onChange={ev => setVal(sk,'pace',ev.target.value)} />
+                  </div>
+                  <div style={s.dRunField}>
+                    <label style={s.dRunLbl}>Avg HR</label>
+                    <input style={s.dRunInput} type="text" placeholder="e.g. 143 bpm"
+                      value={getVal(sk,'hr')} onChange={ev => setVal(sk,'hr',ev.target.value)} />
+                  </div>
+                </div>
+                <div style={{marginTop:8}}>
+                  <label style={s.dRunLbl}>Notes / Feel</label>
+                  <input style={{...s.dRunInput2, width:"100%", marginTop:4}} type="text" placeholder="How did it feel? PHT? Energy?"
+                    value={getVal(sk,'notes')} onChange={ev => setVal(sk,'notes',ev.target.value)} />
+                </div>
+              </div>
+            );
+          })()}
           {gymDay && gymDay.exercises && gymDay.exercises.length > 0 && (
             <>
               <div style={s.dSection}>Exercises</div>
@@ -1391,6 +1425,40 @@ function DayDrawer({ w, day, onClose }) {
   );
 }
 
+
+// ── WEEKLY RUN SUMMARY ────────────────────────────────────────────────────────
+function getWeekRunSummary(w) {
+  const runs = w.days.filter(d => d.type === 'RUN');
+  let totalMins = 0, totalKm = 0, logged = 0;
+  runs.forEach(day => {
+    const sk = 'run_'+w.week+'_'+day.day+'_'+day.label.replace(/[^a-z0-9]/gi,'_');
+    const time = syncGet(sk+'_time');
+    const dist = syncGet(sk+'_dist');
+    if (time) {
+      // Parse time — accepts mm:ss, hh:mm:ss, or plain minutes
+      const parts = time.trim().split(':').map(Number);
+      let mins = 0;
+      if (parts.length === 3) mins = parts[0]*60 + parts[1] + parts[2]/60;
+      else if (parts.length === 2) mins = parts[0] + parts[1]/60;
+      else mins = parts[0];
+      if (!isNaN(mins)) totalMins += mins;
+      logged++;
+    }
+    if (dist) {
+      const km = parseFloat(dist.replace(/[^0-9.]/g,''));
+      if (!isNaN(km)) totalKm += km;
+    }
+  });
+  return { totalMins, totalKm, logged, total: runs.length };
+}
+
+function formatMins(mins) {
+  const h = Math.floor(mins / 60);
+  const m = Math.round(mins % 60);
+  if (h === 0) return m + 'm';
+  return h + 'h ' + (m > 0 ? m + 'm' : '');
+}
+
 function WeekRow({ w, phaseFilter }) {
   const [open, setOpen] = useState(false);
   const [activeDay, setActiveDay] = useState(null);
@@ -1416,6 +1484,7 @@ function WeekRow({ w, phaseFilter }) {
       </button>
 
       {open && (() => {
+        const summary = getWeekRunSummary(w);
         const DOW_ORDER = ["MON","TUE","WED","THU","FRI","SAT","SUN"];
         const DOW_FULL  = {MON:"Monday",TUE:"Tuesday",WED:"Wednesday",THU:"Thursday",FRI:"Friday",SAT:"Saturday",SUN:"Sunday"};
         const dayMap = {};
@@ -1443,10 +1512,29 @@ function WeekRow({ w, phaseFilter }) {
         };
 
         const isMobile = window.innerWidth < 700;
+        const summaryPanel = (
+          <div style={s.wkSummary}>
+            <div style={s.wkSumTitle}>🏃 Weekly Running Log</div>
+            <div style={s.wkSumGrid}>
+              <div style={s.wkSumItem}>
+                <span style={s.wkSumLbl}>Total Time</span>
+                <span style={s.wkSumVal}>{summary.totalMins > 0 ? formatMins(summary.totalMins) : '—'}</span>
+                <span style={s.wkSumSub}>Target ~{w.km} km</span>
+              </div>
+              <div style={s.wkSumItem}>
+                <span style={s.wkSumLbl}>Total Distance</span>
+                <span style={s.wkSumVal}>{summary.totalKm > 0 ? summary.totalKm.toFixed(1)+' km' : '—'}</span>
+                <span style={s.wkSumSub}>{summary.logged}/{summary.total} runs logged</span>
+              </div>
+            </div>
+          </div>
+        );
 
         if (isMobile) {
           // ── MOBILE: vertical list, one row per day ──
-          return (
+          return (<>
+            {summaryPanel}
+            (
             <div style={s.mobList}>
               {DOW_ORDER.map(dow => {
                 const sessions = dayMap[dow];
@@ -1480,12 +1568,13 @@ function WeekRow({ w, phaseFilter }) {
                 ));
               })}
             </div>
-          );
+          </>);
         }
 
         // ── DESKTOP: 7-column calendar ──
         return (
           <div>
+            {summaryPanel}
             <div style={s.calHdrRow}>
               {DOW_ORDER.map(d => <div key={d} style={s.calHdrCell}>{d}</div>)}
             </div>
