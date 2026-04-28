@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#1D4ED8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="AMS Plan">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjQwIiBmaWxsPSIjMUQ0RUQ4Ii8+PGNpcmNsZSBjeD0iOTYiIGN5PSI0MCIgcj0iMTYiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTYyIDg4IEw5NiA2OCBMMTMwIDg4IE05NiA2OCBMOTYgMTI4IE02OCAxNTIgTDk2IDEyOCBMMTI0IDE1MiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI5IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSI5NiIgeT0iMTgyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjRThGRjQ3IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMjAiIGxldHRlci1zcGFjaW5nPSI0Ij5BTVM8L3RleHQ+PC9zdmc+">
+<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiQW1zdGVyZGFtIE1hcmF0aG9uIFBsYW4iLCJzaG9ydF9uYW1lIjoiQU1TIFBsYW4iLCJzdGFydF91cmwiOiIuLyIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwib3JpZW50YXRpb24iOiJwb3J0cmFpdCIsImJhY2tncm91bmRfY29sb3IiOiIjRkZGRkZGIiwidGhlbWVfY29sb3IiOiIjMUQ0RUQ4IiwiaWNvbnMiOlt7InNyYyI6ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIWnBaWGRDYjNnOUlqQWdNQ0F4T1RJZ01Ua3lJajQ4Y21WamRDQjNhV1IwYUQwaU1Ua3lJaUJvWldsbmFIUTlJakU1TWlJZ2NuZzlJalF3SWlCbWFXeHNQU0lqTVVRMFJVUTRJaTgrUEdOcGNtTnNaU0JqZUQwaU9UWWlJR041UFNJME1DSWdjajBpTVRZaUlHWnBiR3c5SW5kb2FYUmxJaTgrUEhCaGRHZ2daRDBpVFRZeUlEZzRJRXc1TmlBMk9DQk1NVE13SURnNElFMDVOaUEyT0NCTU9UWWdNVEk0SUUwMk9DQXhOVElnVERrMklERXlPQ0JNTVRJMElERTFNaUlnYzNSeWIydGxQU0ozYUdsMFpTSWdjM1J5YjJ0bExYZHBaSFJvUFNJNUlpQnpkSEp2YTJVdGJHbHVaV05oY0QwaWNtOTFibVFpSUhOMGNtOXJaUzFzYVc1bGFtOXBiajBpY205MWJtUWlJR1pwYkd3OUltNXZibVVpTHo0OGRHVjRkQ0I0UFNJNU5pSWdlVDBpTVRneUlpQjBaWGgwTFdGdVkyaHZjajBpYldsa1pHeGxJaUJtYVd4c1BTSWpSVGhHUmpRM0lpQm1iMjUwTFdaaGJXbHNlVDBpUVhKcFlXd2lJR1p2Ym5RdGQyVnBaMmgwUFNJNE1EQWlJR1p2Ym5RdGMybDZaVDBpTWpBaUlHeGxkSFJsY2kxemNHRmphVzVuUFNJMElqNUJUVk04TDNSbGVIUStQQzl6ZG1jKyIsInNpemVzIjoiMTkyeDE5MiIsInR5cGUiOiJpbWFnZS9zdmcreG1sIiwicHVycG9zZSI6ImFueSBtYXNrYWJsZSJ9XX0=">
+<title>Amsterdam Plan</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+body{margin:0;overscroll-behavior:none;}
+#root{min-height:100vh;}
+button{-webkit-user-select:none;user-select:none;font-family:inherit;}
+input{font-family:inherit;}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+<script type="text/babel">
+const {useState} = React;
+
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyaba3yhVQbH4XgS0t_B7aT2y3Zr9R309Q3q4l6ghyJezfy0z-yJd0YPXy3agQrwEH_/exec';
+let _cache = {};
+let _loaded = false;
+let _syncStatus = 'loading';
+const _listeners = [];
+function onSyncStatus(fn) { _listeners.push(fn); }
+function _notify(s) { _syncStatus = s; _listeners.forEach(fn => fn(s)); }
+
+// Apps Script requires form-encoded POST (not JSON) when called from a local file
+// GET works fine with cors mode
+async function syncLoad() {
+  // Seed from localStorage immediately so UI is never blank
+  try { const l = localStorage.getItem('ams_cache'); if (l) _cache = JSON.parse(l); } catch(_) {}
+  _loaded = true;
+  _notify('loading');
+  // Then fetch from sheet and merge
+  try {
+    const res = await fetch(SCRIPT_URL + '?action=getAll', {method:'GET', mode:'cors'});
+    const data = await res.json();
+    _cache = Object.assign({}, _cache, data);
+    try { localStorage.setItem('ams_cache', JSON.stringify(_cache)); } catch(_) {}
+    _notify('ok');
+  } catch(e) {
+    _notify('offline');
+  }
+}
+
+function syncGet(key) { return _cache[key] || ''; }
+
+function syncSet(key, value) {
+  _cache[key] = value;
+  try { localStorage.setItem('ams_cache', JSON.stringify(_cache)); } catch(_) {}
+  // Send as form-encoded — the only reliable cross-origin POST format for Apps Script
+  const body = new URLSearchParams({action:'set', key, value});
+  fetch(SCRIPT_URL, {
+    method:'POST',
+    mode:'no-cors',
+    body
+  }).then(()=>_notify('ok')).catch(()=>_notify('offline'));
+}
+
+syncLoad();
+
+const WEEKS = [
+  // ============ PHASE 1 ============
+  {
+    week: 1, phase: 'p1', date: '5 May',
+    focus: 'Reactivation — isometrics, easy miles, bilateral foundation',
+    km: 35,
+    phtNote: 'Begin isometrics only. No stretch loading. No single-leg. Confirm with physio before starting.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Bilateral lower — moderate load' },
+      { day: 'TUE', type: 'RUN', label: 'Easy', detail: '45 min easy Z2' },
+      { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Upper body + pull focus' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Posterior chain — PHT-safe only' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '60 min easy Z2' },
+      { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
+    ],
+    gym: {
+      dayA: {
+        label: 'MON — Lower A (Bilateral)',
+        exercises: [
+          { name: 'Barbell Back Squat', sets: '4×6', reps: '6', load: '70% 1RM', notes: 'Controlled descent 3s, pause at bottom' },
+          { name: 'Hip Thrust (bilateral)', sets: '4×10', reps: '10', load: 'Moderate', notes: 'Drive through heels, pause 2s at top. Glute focus.' },
+          { name: 'Hip Extension Machine', sets: '3×8', reps: '8', load: 'Moderate', notes: 'Bilateral, posterior chain activation — PHT safe, controlled' },
+          { name: 'Leg Press (bilateral)', sets: '3×10', reps: '10', load: 'Moderate', notes: 'Full ROM, no single-leg variation yet' },
+          { name: 'Seated Leg Curl', sets: '3×12', reps: '12', load: 'Moderate', notes: 'PHT-safe: avoid extreme hip flexion with load' },
+          { name: 'Standing Calf Raise', sets: '4×15', reps: '15', load: 'Moderate', notes: 'Bilateral only' },
+          { name: 'Copenhagen Plank', sets: '3×20s', reps: '20s', load: 'BW', notes: 'Adductor/groin stability — PHT safe' },
+        ]
+      },
+      dayB: {
+        label: 'WED — Upper / Pull',
+        exercises: [
+          { name: 'Pull-Up / Lat Pulldown', sets: '4×6–8', reps: '6–8', load: 'BW or added', notes: 'Full ROM, dead hang start' },
+          { name: 'Barbell Row (Pendlay)', sets: '4×6', reps: '6', load: '70% 1RM', notes: 'Explosive pull, controlled lower' },
+          { name: 'Incline DB Press', sets: '3×8', reps: '8', load: 'Moderate', notes: 'Shoulder stability important for arm drive' },
+          { name: 'Cable Face Pull', sets: '3×15', reps: '15', load: 'Light', notes: 'Shoulder health/posture for running' },
+          { name: 'DB Hammer Curl', sets: '3×10', reps: '10', load: 'Moderate', notes: '' },
+          { name: 'Tricep Pushdown', sets: '3×12', reps: '12', load: 'Moderate', notes: '' },
+          { name: 'Dead Bug', sets: '3×8/side', reps: '8/side', load: 'BW', notes: 'Core stability for running posture' },
+        ]
+      },
+      dayC: {
+        label: 'FRI — Posterior Chain (PHT-safe)',
+        exercises: [
+          { name: 'Isometric Wall Hamstring Hold', sets: '5×45s', reps: '45s', load: 'BW', notes: 'PHT REHAB: Sit on bench, hip at 90°. Press heel into wall with ~70% effort. Hold 45s per rep. 2–3 min rest between. Zero pain — discomfort ≤3/10 only.' },
+          { name: 'Hip Thrust (bilateral)', sets: '4×10', reps: '10', load: '60% 1RM', notes: 'Drive through both heels, pause at top 2s' },
+          { name: 'Back Extension (45°)', sets: '3×12', reps: '12', load: 'BW to light plate', notes: 'Keep neutral spine, feel glute/hamstring' },
+          { name: 'Nordic Curl (eccentric only)', sets: '3×5', reps: '5', load: 'BW', notes: 'Lower only — no pull up. Stop if PHT discomfort.' },
+          { name: 'Glute-Ham Raise (partial)', sets: '3×8', reps: '8', load: 'BW', notes: 'Partial ROM only — do not load ischial tuberosity aggressively' },
+          { name: 'Plank Variations', sets: '3×40s', reps: '40s', load: 'BW', notes: 'Front, side alternating' },
+        ]
+      }
+    }
+  },
+  {
+    week: 2, phase: 'p1', date: '12 May',
+    focus: 'Volume consolidation — isometrics progressed, add sets',
+    km: 38,
+    phtNote: 'Progress isometric duration to 60s if pain-free last week. Still no isotonic loading of hamstring proximal attachment.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Add 5% load to squat/Leg Press' },
+      { day: 'TUE', type: 'RUN', label: 'Easy', detail: '50 min easy Z2' },
+      { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Progressive overload on rows and pulls' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Isometrics to 60s, hip thrusts +5kg' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '70 min easy Z2' },
+      { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
+    ],
+    gym: {
+      dayA: {
+        label: 'MON — Lower A (Bilateral) +5%',
+        exercises: [
+          { name: 'Barbell Back Squat', sets: '4×6', reps: '6', load: '+5% vs W1', notes: 'Same tempo, add load' },
+          { name: 'Hip Thrust (bilateral)', sets: '4×10', reps: '10', load: '+5kg vs W1', notes: 'Drive through heels, pause 2s at top.' },
+          { name: 'Leg Press (bilateral)', sets: '4×8', reps: '8', load: '+5% vs W1', notes: 'Extra set added' },
+          { name: 'Leg Press', sets: '3×10', reps: '10', load: '+5%', notes: '' },
+          { name: 'Seated Leg Curl', sets: '3×12', reps: '12', load: '+2.5kg', notes: '' },
+          { name: 'Standing Calf Raise', sets: '4×15', reps: '15', load: '+2.5kg', notes: '' },
+          { name: 'Copenhagen Plank', sets: '3×25s', reps: '25s', load: 'BW', notes: 'Increase duration' },
+        ]
+      },
+      dayB: {
+        label: 'WED — Upper / Pull',
+        exercises: [
+          { name: 'Pull-Up / Lat Pulldown', sets: '4×8', reps: '8', load: 'Add load/reps', notes: '' },
+          { name: 'Pendlay Row', sets: '4×6', reps: '6', load: '+5%', notes: '' },
+          { name: 'Incline DB Press', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+          { name: 'Cable Face Pull', sets: '3×15', reps: '15', load: 'Same', notes: '' },
+          { name: 'DB Hammer Curl', sets: '3×10', reps: '10', load: '+2.5kg', notes: '' },
+          { name: 'Tricep Pushdown', sets: '3×12', reps: '12', load: '+2.5kg', notes: '' },
+          { name: 'Dead Bug + Band', sets: '3×8/side', reps: '8/side', load: 'Light band', notes: 'Progress dead bug' },
+        ]
+      },
+      dayC: {
+        label: 'FRI — Posterior Chain (PHT-safe)',
+        exercises: [
+          { name: 'Isometric Wall Hamstring Hold', sets: '5×60s', reps: '60s', load: 'BW', notes: 'Progress to 60s per rep if W1 was pain-free. 70% effort. 2–3 min rest between reps. Total isometric time: 5 min.' },
+          { name: 'Hip Thrust (bilateral)', sets: '4×10', reps: '10', load: '+5kg', notes: '' },
+          { name: 'Back Extension (45°)', sets: '3×12', reps: '12', load: '+light plate', notes: '' },
+          { name: 'Nordic Curl (eccentric)', sets: '3×6', reps: '6', load: 'BW', notes: '1 extra rep' },
+          { name: 'Glute-Ham Raise (partial)', sets: '3×10', reps: '10', load: 'BW', notes: '' },
+          { name: 'Plank Variations', sets: '3×45s', reps: '45s', load: 'BW', notes: '' },
+        ]
+      }
+    }
+  },
+  {
+    week: 3, phase: 'p1', date: '19 May',
+    focus: 'Introduce isotonic hamstring work — low load, long lever',
+    km: 40,
+    phtNote: 'PHYSIO CHECK: Introduce isotonic loading this week only if isometrics have been pain-free for 2 weeks. Start with lying leg curl, pain-free ROM only.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Squat + Leg Press progress' },
+      { day: 'TUE', type: 'RUN', label: 'Easy', detail: '55 min easy Z2' },
+      { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Maintain progressive overload' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'First isotonic hamstring work' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '80 min easy Z2' },
+      { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
+    ],
+    gym: {
+      dayA: {
+        label: 'MON — Lower A',
+        exercises: [
+          { name: 'Barbell Back Squat', sets: '4×5', reps: '5', load: '+5% vs W2', notes: 'Drop rep, add load — strength focus' },
+          { name: 'Hip Thrust (bilateral)', sets: '4×8', reps: '8', load: '+5kg vs W2', notes: 'Heavy. Pause 1s at top.' },
+          { name: 'Leg Press (bilateral)', sets: '4×8', reps: '8', load: '+5% vs W2', notes: '' },
+          { name: 'Leg Press', sets: '3×10', reps: '10', load: '+5%', notes: '' },
+          { name: 'Seated Leg Curl', sets: '3×10', reps: '10', load: 'Reduce reps, add load', notes: 'PHT: stay in comfortable ROM' },
+          { name: 'Standing Calf Raise', sets: '4×15', reps: '15', load: '+2.5kg', notes: '' },
+          { name: 'Copenhagen Plank', sets: '3×30s', reps: '30s', load: 'BW', notes: '' },
+        ]
+      },
+      dayB: {
+        label: 'WED — Upper / Pull',
+        exercises: [
+          { name: 'Weighted Pull-Up', sets: '4×5', reps: '5', load: '+5kg', notes: 'Add belt weight' },
+          { name: 'Pendlay Row', sets: '4×5', reps: '5', load: '+5% vs W2', notes: '' },
+          { name: 'Incline DB Press', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+          { name: 'Cable Face Pull', sets: '3×15', reps: '15', load: '+light', notes: '' },
+          { name: 'EZ Bar Curl', sets: '3×8', reps: '8', load: 'Moderate', notes: 'Swap from DB for load progression' },
+          { name: 'Close Grip Bench Press', sets: '3×8', reps: '8', load: 'Moderate', notes: 'Tricep strength' },
+          { name: 'Pallof Press', sets: '3×10/side', reps: '10/side', load: 'Light-mod cable', notes: 'Anti-rotation core' },
+        ]
+      },
+      dayC: {
+        label: 'FRI — Posterior Chain (Isotonic Intro)',
+        exercises: [
+          { name: 'Isometric Wall Hamstring Hold', sets: '4×60s', reps: '60s', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2–3 min rest. If discomfort crept above 3/10 last week, return to 45s.' },
+          { name: 'Lying Leg Curl (bilateral)', sets: '3×12', reps: '12', load: 'Very light', notes: 'ISOTONIC INTRO: full pain-free ROM only. Stop if PHT provoked.' },
+          { name: 'Hip Thrust (bilateral)', sets: '4×8', reps: '8', load: '+5kg vs W2', notes: '' },
+          { name: 'Back Extension', sets: '3×12', reps: '12', load: '+plate', notes: '' },
+          { name: 'Nordic Curl (eccentric)', sets: '3×6', reps: '6', load: 'BW', notes: '' },
+          { name: 'Plank + shoulder tap', sets: '3×10/side', reps: '10/side', load: 'BW', notes: 'Dynamic core' },
+        ]
+      }
+    }
+  },
+  {
+    week: 4, phase: 'p1', date: '26 May',
+    focus: 'Deload week — volume back 20%, consolidate tendon response',
+    km: 32,
+    phtNote: 'Deload: assess tendon response to isotonic work. If provoked, return to isometrics only. If fine, continue.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A (Deload)', detail: 'Same exercises, -20% load, -1 set' },
+      { day: 'TUE', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — deload' },
+      { day: 'WED', type: 'GYM', label: 'Upper (Deload)', detail: '-20% load, -1 set' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Maintain isometrics, reduce hip thrust volume' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '60 min easy Z2 — deload' },
+      { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
+    ],
+    gym: {
+      dayA: {
+        label: 'MON — Lower A (Deload)',
+        exercises: [
+          { name: 'Barbell Back Squat', sets: '3×5', reps: '5', load: '-20% vs W3', notes: 'Deload — technique focus' },
+          { name: 'Hip Thrust (bilateral)', sets: '3×10', reps: '10', load: '-20% vs W3', notes: 'Deload — maintain movement quality.' },
+          { name: 'Leg Press (bilateral)', sets: '3×8', reps: '8', load: '-20% vs W3', notes: '' },
+          { name: 'Leg Press', sets: '2×10', reps: '10', load: '-20%', notes: '' },
+          { name: 'Seated Leg Curl', sets: '2×12', reps: '12', load: 'Light', notes: '' },
+          { name: 'Calf Raise', sets: '3×15', reps: '15', load: 'Moderate', notes: '' },
+        ]
+      },
+      dayB: {
+        label: 'WED — Upper (Deload)',
+        exercises: [
+          { name: 'Pull-Up', sets: '3×5', reps: '5', load: 'BW', notes: 'Drop weight' },
+          { name: 'Pendlay Row', sets: '3×5', reps: '5', load: '-20%', notes: '' },
+          { name: 'Incline DB Press', sets: '2×8', reps: '8', load: '-20%', notes: '' },
+          { name: 'Face Pull', sets: '2×15', reps: '15', load: 'Light', notes: '' },
+          { name: 'Dead Bug', sets: '3×8', reps: '8', load: 'BW', notes: '' },
+        ]
+      },
+      dayC: {
+        label: 'FRI — Posterior Chain (Deload)',
+        exercises: [
+          { name: 'Isometric Wall Hamstring Hold', sets: '4×60s', reps: '60s', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2–3 min rest between reps.' },
+          { name: 'Hip Thrust', sets: '3×10', reps: '10', load: '-20%', notes: '' },
+          { name: 'Back Extension', sets: '2×12', reps: '12', load: 'BW', notes: '' },
+          { name: 'Nordic Curl (eccentric)', sets: '2×5', reps: '5', load: 'BW', notes: '' },
+          { name: 'Plank', sets: '2×40s', reps: '40s', load: 'BW', notes: '' },
+        ]
+      }
+    }
+  },
+  {
+    week: 5, phase: 'p1', date: '2 Jun',
+    focus: 'Reload — increase isotonic volume, add single-leg prep',
+    km: 43,
+    phtNote: 'If isotonics well-tolerated weeks 3–4: add single-leg prep this week (split squat, no heavy load). Physio sign-off required.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Return to W3 loads, add split squat intro' },
+      { day: 'TUE', type: 'RUN', label: 'Easy', detail: '60 min easy Z2' },
+      { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Progress load' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Progress isotonic + add single-leg hip thrust' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '85 min easy Z2' },
+      { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
+    ],
+    gym: {
+      dayA: {
+        label: 'MON — Lower A + Split Squat Intro',
+        exercises: [
+          { name: 'Barbell Back Squat', sets: '4×5', reps: '5', load: 'Match W3', notes: '' },
+          { name: 'Hip Thrust (bilateral)', sets: '4×8', reps: '8', load: 'Match W3', notes: 'Reload. Heavy. Pause at top.' },
+          { name: 'Leg Press (bilateral)', sets: '4×8', reps: '8', load: 'Match W3', notes: '' },
+          { name: 'Bulgarian Split Squat (BW)', sets: '3×8/leg', reps: '8/leg', load: 'BW only', notes: 'INTRO: bodyweight only, monitor PHT response. Rear foot elevated.' },
+          { name: 'Leg Press', sets: '3×10', reps: '10', load: 'Match W3', notes: '' },
+          { name: 'Calf Raise', sets: '4×15', reps: '15', load: '+2.5kg', notes: '' },
+          { name: 'Copenhagen Plank', sets: '3×30s', reps: '30s', load: 'BW', notes: '' },
+        ]
+      },
+      dayB: {
+        label: 'WED — Upper / Pull',
+        exercises: [
+          { name: 'Weighted Pull-Up', sets: '4×5', reps: '5', load: '+7.5kg', notes: '' },
+          { name: 'Pendlay Row', sets: '4×5', reps: '5', load: '+5%', notes: '' },
+          { name: 'Incline DB Press', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+          { name: 'Face Pull', sets: '3×15', reps: '15', load: '+light', notes: '' },
+          { name: 'EZ Bar Curl', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+          { name: 'Close Grip Bench', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+          { name: 'Pallof Press', sets: '3×10/side', reps: '10/side', load: '+light', notes: '' },
+        ]
+      },
+      dayC: {
+        label: 'FRI — Posterior Chain + Single-Leg Intro',
+        exercises: [
+          { name: 'Isometric Wall Hold', sets: '3×60s', reps: '60s', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2–3 min rest. Reduce to 3 sets as isotonic volume increases.' },
+          { name: 'Lying Leg Curl (bilateral)', sets: '3×10', reps: '10', load: '+light vs W3', notes: '' },
+          { name: 'Single-Leg Hip Thrust (BW)', sets: '3×10/leg', reps: '10/leg', load: 'BW only', notes: 'INTRO: monitor PHT. Slow, controlled. Stop if provoked.' },
+          { name: 'Hip Thrust (bilateral)', sets: '3×8', reps: '8', load: 'Maintain W3 load', notes: '' },
+          { name: 'Nordic Curl (eccentric)', sets: '3×6', reps: '6', load: 'BW', notes: '' },
+          { name: 'Back Extension', sets: '3×12', reps: '12', load: '+plate', notes: '' },
+        ]
+      }
+    }
+  },
+  {
+    week: 6, phase: 'p1', date: '9 Jun',
+    focus: 'Phase 1 consolidation — physio review, prepare for Phase 2',
+    km: 45,
+    phtNote: 'PHYSIO REVIEW this week. Assess readiness for single-leg loaded work and hill sprints in Phase 2. Get clearance before W7.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Test split squat with light load' },
+      { day: 'TUE', type: 'RUN', label: 'Easy', detail: '60 min easy Z2' },
+      { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Consolidate loads' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Progress single-leg hip thrust with light load' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '90 min easy Z2' },
+      { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
+    ],
+    gym: {
+      dayA: {
+        label: 'MON — Lower A + Split Squat (Light Load)',
+        exercises: [
+          { name: 'Barbell Back Squat', sets: '4×5', reps: '5', load: '+5% vs W5', notes: '' },
+          { name: 'Hip Thrust (bilateral)', sets: '4×8', reps: '8', load: '+5kg vs W5', notes: 'Heavy. Pause at top 1s.' },
+          { name: 'Leg Press (bilateral)', sets: '4×8', reps: '8', load: '+5% vs W5', notes: '' },
+          { name: 'Bulgarian Split Squat', sets: '3×8/leg', reps: '8/leg', load: '10–15kg DB each hand', notes: 'Add light load. Monitor PHT carefully.' },
+          { name: 'Leg Press', sets: '3×10', reps: '10', load: '+5%', notes: '' },
+          { name: 'Calf Raise', sets: '4×15', reps: '15', load: '+2.5kg', notes: '' },
+          { name: 'Copenhagen Plank', sets: '3×35s', reps: '35s', load: 'BW', notes: '' },
+        ]
+      },
+      dayB: {
+        label: 'WED — Upper / Pull',
+        exercises: [
+          { name: 'Weighted Pull-Up', sets: '4×5', reps: '5', load: '+10kg', notes: '' },
+          { name: 'Pendlay Row', sets: '4×5', reps: '5', load: '+5%', notes: '' },
+          { name: 'Incline DB Press', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+          { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+          { name: 'EZ Bar Curl', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+          { name: 'Close Grip Bench', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+          { name: 'Pallof Press', sets: '3×12/side', reps: '12/side', load: '', notes: '' },
+        ]
+      },
+      dayC: {
+        label: 'FRI — Posterior Chain + Single-Leg Hip Thrust (Loaded)',
+        exercises: [
+          { name: 'Single-Leg Hip Thrust', sets: '3×10/leg', reps: '10/leg', load: '20–30kg barbell', notes: 'First loaded single-leg work. Pain-free only.' },
+          { name: 'Lying Leg Curl', sets: '3×10', reps: '10', load: '+light', notes: '' },
+          { name: 'Hip Thrust (bilateral)', sets: '3×8', reps: '8', load: 'Heavy', notes: '' },
+          { name: 'Nordic Curl', sets: '3×6', reps: '6', load: 'BW', notes: '' },
+          { name: 'Back Extension', sets: '3×12', reps: '12', load: '+plate', notes: '' },
+          { name: 'Plank series', sets: '3×45s', reps: '45s', load: 'BW', notes: '' },
+        ]
+      }
+    }
+  },
+
+  // ============ PHASE 2 ============
+  {
+    week: 7, phase: 'p2', date: '16 Jun',
+    focus: 'Phase 2 begins — speed work intro, hill sprints coming, strength loads increase',
+    km: 55,
+    phtNote: 'Physio clearance confirmed before starting this week. Single-leg work progresses with load.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Increase BSS load, progress squat' },
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — double day, PM after gym' },
+      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '10×100m strides @ 3:20–3:30/km · full recovery · focus on mechanics' },
+      { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Progressive overload' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Single-leg hip thrust loaded, add leg curl' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '90 min easy Z2 + 4×100m strides at end' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '40 min easy Z1 — recovery run' },
+    ],
+    gym: {
+      dayA: {
+        label: 'MON — Lower A (Strength Phase)',
+        exercises: [
+          { name: 'Barbell Back Squat', sets: '5×5', reps: '5', load: '80% 1RM', notes: 'Intensity step up — 5×5 block begins' },
+          { name: 'Hip Thrust (bilateral)', sets: '4×8', reps: '8', load: 'Heavy', notes: 'Max load. Full hip extension. Pause 1s.' },
+          { name: 'Leg Press (bilateral)', sets: '4×6', reps: '6', load: '+5% vs P1 peak', notes: '' },
+          { name: 'Bulgarian Split Squat', sets: '3×8/leg', reps: '8/leg', load: '+5kg vs W6', notes: '' },
+          { name: 'Leg Press', sets: '3×8', reps: '8', load: 'Heavy', notes: '' },
+          { name: 'Single-Leg Calf Raise', sets: '4×12/leg', reps: '12/leg', load: 'BW/+load', notes: 'Progress to single-leg calf work' },
+          { name: 'Copenhagen Plank', sets: '3×40s', reps: '40s', load: 'BW', notes: '' },
+        ]
+      },
+      dayB: {
+        label: 'WED — Upper / Pull',
+        exercises: [
+          { name: 'Weighted Pull-Up', sets: '5×4', reps: '4', load: '+12.5kg', notes: '5×4 intensity phase' },
+          { name: 'Barbell Row', sets: '4×5', reps: '5', load: '+5%', notes: '' },
+          { name: 'Incline DB Press', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+          { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+          { name: 'EZ Bar Curl', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+          { name: 'Close Grip Bench', sets: '3×6', reps: '6', load: '+5kg', notes: '' },
+          { name: 'Pallof Press', sets: '3×12/side', reps: '12/side', load: '+', notes: '' },
+        ]
+      },
+      dayC: {
+        label: 'FRI — Posterior Chain (Loaded Single-Leg)',
+        exercises: [
+          { name: 'Single-Leg Hip Thrust', sets: '4×8/leg', reps: '8/leg', load: '+10kg vs W6', notes: 'Progressive loading on ischial attachment' },
+          { name: 'Lying Leg Curl (single-leg)', sets: '3×10/leg', reps: '10/leg', load: 'Light-mod', notes: 'First single-leg curl. Physio clearance needed.' },
+          { name: 'Single-Leg Hip Abduction (cable)', sets: '3×12/leg', reps: '12/leg', load: 'Light cable', notes: 'Hip stability + glute med — no ischial load' },
+          { name: 'Nordic Curl', sets: '3×6', reps: '6', load: 'BW', notes: '' },
+          { name: 'Back Extension', sets: '3×10', reps: '10', load: '+plate', notes: '' },
+          { name: 'Plank + reach', sets: '3×10/side', reps: '10/side', load: 'BW', notes: '' },
+        ]
+      }
+    }
+  },
+  {
+    week: 8, phase: 'p2', date: '23 Jun',
+    focus: 'Speed work builds — strides, short reps, hill prep',
+    km: 60,
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A', detail: '5×5 squat continues, +5%' },
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — double day PM' },
+      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '12×100m @ 3:20–3:25/km · full recovery + 4×200m @ 3:30/km · 90s recovery' },
+      { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Progressive overload' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: '+5% all loaded single-leg' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '100 min easy Z2' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '45 min easy Z1 — recovery run' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A', exercises: [
+        { name: 'Barbell Squat', sets: '5×5', reps: '5', load: '+5% vs W7', notes: '' },
+        { name: 'Hip Thrust (bilateral)', sets: '4×8', reps: '8', load: '+5kg vs W7', notes: '' },
+        { name: 'Hack Squat', sets: '4×6', reps: '6', load: '+5%', notes: '' },
+        { name: 'Bulgarian Split Squat', sets: '3×8/leg', reps: '8/leg', load: '+5kg', notes: '' },
+        { name: 'Leg Press', sets: '3×8', reps: '8', load: '+5%', notes: '' },
+        { name: 'Single-Leg Calf Raise', sets: '4×12/leg', reps: '12/leg', load: '+load', notes: '' },
+        { name: 'Copenhagen Plank', sets: '3×40s', reps: '40s', load: 'BW', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper', exercises: [
+        { name: 'Weighted Pull-Up', sets: '5×4', reps: '4', load: '+2.5kg', notes: '' },
+        { name: 'Barbell Row', sets: '4×5', reps: '5', load: '+5%', notes: '' },
+        { name: 'Incline DB Press', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+        { name: 'EZ Bar Curl', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+        { name: 'Close Grip Bench', sets: '3×6', reps: '6', load: '+2.5kg', notes: '' },
+        { name: 'Pallof Press', sets: '3×12/side', reps: '12/side', load: '', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior Chain', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '4×8/leg', reps: '8/leg', load: '+10kg', notes: '' },
+        { name: 'Single-Leg Lying Curl', sets: '3×10/leg', reps: '10/leg', load: '+2.5kg', notes: '' },
+        { name: 'Single-Leg Cable Hip Abduction', sets: '3×12/leg', reps: '12/leg', load: '+light', notes: '' },
+        { name: 'Nordic Curl', sets: '3×7', reps: '7', load: 'BW', notes: '+1 rep' },
+        { name: 'Back Extension', sets: '3×10', reps: '10', load: '+plate', notes: '' },
+        { name: 'Side Plank', sets: '3×40s/side', reps: '40s/side', load: 'BW', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 9, phase: 'p2', date: '30 Jun',
+    focus: 'Deload — recover before hill sprints introduction',
+    km: 40,
+    phtNote: 'Deload week. Assess tendon response before hill sprints begin in W10.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A (Deload)', detail: '-20% all' },
+      { day: 'TUE', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — deload week' },
+      { day: 'WED', type: 'GYM', label: 'Upper (Deload)', detail: '-20% all' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior Chain (Deload)', detail: 'Reduce volume, maintain isometrics' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '70 min easy Z2' },
+      { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A (Deload)', exercises: [
+        { name: 'Barbell Squat', sets: '3×5', reps: '5', load: '-20%', notes: '' },
+        { name: 'Hip Thrust (bilateral)', sets: '3×10', reps: '10', load: '-20%', notes: 'Deload' },
+        { name: 'Leg Press', sets: '3×6', reps: '6', load: '-20%', notes: '' },
+        { name: 'Bulgarian Split Squat', sets: '2×8/leg', reps: '8/leg', load: '-20%', notes: '' },
+        { name: 'Calf Raise', sets: '3×12', reps: '12', load: 'Moderate', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper (Deload)', exercises: [
+        { name: 'Pull-Up', sets: '3×5', reps: '5', load: 'BW', notes: '' },
+        { name: 'Barbell Row', sets: '3×5', reps: '5', load: '-20%', notes: '' },
+        { name: 'Incline DB Press', sets: '2×8', reps: '8', load: '-20%', notes: '' },
+        { name: 'Face Pull', sets: '2×15', reps: '15', load: 'Light', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior (Deload)', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '3×8/leg', reps: '8/leg', load: '-20%', notes: '' },
+        { name: 'Single-Leg Curl', sets: '2×10/leg', reps: '10/leg', load: 'Light', notes: '' },
+        { name: 'Nordic Curl', sets: '2×5', reps: '5', load: 'BW', notes: '' },
+        { name: 'Plank', sets: '2×45s', reps: '45s', load: 'BW', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 10, phase: 'p2', date: '7 Jul',
+    focus: 'Hill sprints introduced — short, explosive, maximal. Strength reloads.',
+    km: 60,
+    phtNote: 'Hill sprints begin: 6–8s maximal effort on 6–8% gradient. Walk down recovery. Stop if PHT provoked. Physio to be informed.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Reload to W8 levels' },
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — double day PM' },
+      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '8×200m @ 3:28–3:32/km · 2 min full recovery — short, fast' },
+      { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: '' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Progress single-leg work' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '95 min easy Z2' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '45 min easy Z1' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A (Reloaded)', exercises: [
+        { name: 'Barbell Squat', sets: '5×5', reps: '5', load: 'Match W8', notes: '' },
+        { name: 'Hip Thrust (bilateral)', sets: '4×8', reps: '8', load: 'Match W8', notes: '' },
+        { name: 'Hack Squat', sets: '4×6', reps: '6', load: 'Match W8', notes: '' },
+        { name: 'Bulgarian Split Squat', sets: '3×8/leg', reps: '8/leg', load: 'Match W8', notes: '' },
+        { name: 'Leg Press', sets: '3×8', reps: '8', load: 'Heavy', notes: '' },
+        { name: 'Single-Leg Calf Raise', sets: '4×12/leg', reps: '12/leg', load: '', notes: '' },
+        { name: 'Copenhagen Plank', sets: '3×40s', reps: '40s', load: 'BW', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper', exercises: [
+        { name: 'Weighted Pull-Up', sets: '5×4', reps: '4', load: 'Match W8', notes: '' },
+        { name: 'Barbell Row', sets: '4×5', reps: '5', load: '+5%', notes: '' },
+        { name: 'Incline DB Press', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+        { name: 'EZ Bar Curl', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+        { name: 'Close Grip Bench', sets: '3×6', reps: '6', load: '+2.5kg', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior Chain', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '4×8/leg', reps: '8/leg', load: '+10kg vs W8', notes: '' },
+        { name: 'Single-Leg Hip Abduction (cable)', sets: '3×8/leg', reps: '8/leg', load: '+2.5kg', notes: 'Hip stability, glute med — no ischial load' },
+        { name: 'Single-Leg Curl', sets: '3×10/leg', reps: '10/leg', load: '+2.5kg', notes: '' },
+        { name: 'Nordic Curl', sets: '3×8', reps: '8', load: 'BW', notes: '' },
+        { name: 'Back Extension', sets: '3×10', reps: '10', load: '+plate', notes: '' },
+        { name: 'Plank Series', sets: '3×45s', reps: '45s', load: 'BW', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 11, phase: 'p2', date: '14 Jul',
+    focus: 'Speed reps + hill sprints, strength intensity peaks',
+    km: 65,
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A', detail: '+5% squat, +5% BSS' },
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '45 min easy Z2 — double day PM' },
+      { day: 'TUE', type: 'RUN', label: 'Speed + Hills', detail: 'WU 15 min + 10×8s hill sprints (max effort) + 6×200m @ 3:28/km · 90s recovery + CD 10 min' },
+      { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: '+5% main lifts' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: '+5% all' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '105 min easy Z2 + 6×100m strides' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '50 min easy Z1' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A', exercises: [
+        { name: 'Barbell Squat', sets: '5×5', reps: '5', load: '+5% vs W10', notes: '' },
+        { name: 'Hip Thrust (bilateral)', sets: '4×8', reps: '8', load: '+5kg vs W10', notes: '' },
+        { name: 'Hack Squat', sets: '4×6', reps: '6', load: '+5%', notes: '' },
+        { name: 'Bulgarian Split Squat', sets: '3×8/leg', reps: '8/leg', load: '+5kg', notes: '' },
+        { name: 'Leg Press', sets: '3×8', reps: '8', load: '+5%', notes: '' },
+        { name: 'Single-Leg Calf Raise', sets: '4×12/leg', reps: '12/leg', load: '+load', notes: '' },
+        { name: 'Copenhagen Plank', sets: '3×45s', reps: '45s', load: 'BW', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper', exercises: [
+        { name: 'Weighted Pull-Up', sets: '5×4', reps: '4', load: '+2.5kg', notes: '' },
+        { name: 'Barbell Row', sets: '4×5', reps: '5', load: '+5%', notes: '' },
+        { name: 'Incline DB Press', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+        { name: 'EZ Bar Curl', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+        { name: 'Close Grip Bench', sets: '3×6', reps: '6', load: '+2.5kg', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior Chain', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '4×8/leg', reps: '8/leg', load: '+5kg', notes: '' },
+        { name: 'Single-Leg Hip Abduction (cable)', sets: '3×8/leg', reps: '8/leg', load: '+2.5kg', notes: 'Hip stability, glute med — no ischial load' },
+        { name: 'Single-Leg Curl', sets: '3×10/leg', reps: '10/leg', load: '+2.5kg', notes: '' },
+        { name: 'Nordic Curl', sets: '3×8', reps: '8', load: 'BW', notes: '' },
+        { name: 'Back Extension', sets: '3×10', reps: '10', load: '+plate', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 12, phase: 'p2', date: '21 Jul',
+    focus: '5km TIME TRIAL — benchmark speed progress',
+    km: 35,
+    phtNote: 'Time trial week — reduce gym volume. Assess PHT response to race-pace effort.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A (Light)', detail: '-30% volume, stay loose' },
+      { day: 'TUE', type: 'RUN', label: 'Easy + Strides', detail: '35 min easy + 6×100m strides' },
+      { day: 'WED', type: 'REST', label: 'Rest', detail: '' },
+      { day: 'THU', type: 'RUN', label: '5km TIME TRIAL', detail: 'WU 15 min · 5km max effort · CD 15 min — target sub-17:50' },
+      { day: 'FRI', type: 'GYM', label: 'Upper Only', detail: 'Upper body only — no lower day' },
+      { day: 'SAT', type: 'RUN', label: 'Easy', detail: '60 min easy Z2 — recovery from TT' },
+      { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A (Light Pre-TT)', exercises: [
+        { name: 'Barbell Squat', sets: '3×4', reps: '4', load: '-30% vs W11', notes: 'Stay fresh for time trial' },
+        { name: 'Hip Thrust (bilateral)', sets: '3×10', reps: '10', load: 'Light-moderate', notes: 'Stay loose, no fatigue.' },
+        { name: 'Leg Press', sets: '2×6', reps: '6', load: '-30%', notes: '' },
+        { name: 'Calf Raise', sets: '3×12', reps: '12', load: 'Moderate', notes: '' },
+      ]},
+      dayB: { label: 'FRI — Upper Only', exercises: [
+        { name: 'Pull-Up', sets: '4×5', reps: '5', load: 'BW', notes: '' },
+        { name: 'Barbell Row', sets: '3×5', reps: '5', load: 'Moderate', notes: '' },
+        { name: 'Incline DB Press', sets: '3×8', reps: '8', load: '', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+        { name: 'Core circuit', sets: '3×—', reps: '—', load: 'BW', notes: 'Plank, dead bug, side plank' },
+      ]},
+      dayC: { label: '— No posterior chain this week —', exercises: [] }
+    }
+  },
+  {
+    week: 13, phase: 'p2', date: '28 Jul',
+    focus: 'Post-TT reload — speed reps return, plyometric prep intro',
+    km: 65,
+    phtNote: 'Plyometric prep: pogo jumps, ankle hops. Not bounding yet. Assess PHT post-TT before loading.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A + Plyo Prep', detail: '5×5 squat + pogo jumps intro' },
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — double day PM' },
+      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '10×200m @ 3:28–3:32/km · 90s recovery — volume up from W11' },
+      { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: '' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior + Plyo', detail: 'Loaded single-leg + ankle hops' },
+      { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '105 min easy Z2 + 6×100m strides' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '50 min easy Z1' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A + Plyometric Prep', exercises: [
+        { name: 'Barbell Squat', sets: '5×5', reps: '5', load: 'Match W11 peak', notes: '' },
+        { name: 'Hip Thrust (bilateral)', sets: '4×8', reps: '8', load: 'Match W11 peak', notes: '' },
+        { name: 'Leg Press', sets: '4×6', reps: '6', load: 'Match W11', notes: '' },
+        { name: 'Bulgarian Split Squat', sets: '3×8/leg', reps: '8/leg', load: 'Match W11', notes: '' },
+        { name: 'Pogo Jumps', sets: '4×15', reps: '15', load: 'BW', notes: 'PLYO INTRO: fast ankle rebounds, minimal knee bend. Stiff ankle.' },
+        { name: 'Single-Leg Calf Raise', sets: '4×12/leg', reps: '12/leg', load: '+load', notes: '' },
+        { name: 'Copenhagen Plank', sets: '3×45s', reps: '45s', load: 'BW', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper', exercises: [
+        { name: 'Weighted Pull-Up', sets: '5×4', reps: '4', load: '+2.5kg vs W11', notes: '' },
+        { name: 'Barbell Row', sets: '4×5', reps: '5', load: '+5%', notes: '' },
+        { name: 'Incline DB Press', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+        { name: 'EZ Bar Curl', sets: '3×8', reps: '8', load: '+2.5kg', notes: '' },
+        { name: 'Close Grip Bench', sets: '3×6', reps: '6', load: '+2.5kg', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior + Ankle Hops', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '4×8/leg', reps: '8/leg', load: '+5kg', notes: '' },
+        { name: 'Single-Leg Hip Abduction (cable)', sets: '3×8/leg', reps: '8/leg', load: '+2.5kg', notes: 'Hip stability, glute med — no ischial load' },
+        { name: 'Single-Leg Curl', sets: '3×10/leg', reps: '10/leg', load: '+2.5kg', notes: '' },
+        { name: 'Nordic Curl', sets: '3×8', reps: '8', load: 'BW', notes: '' },
+        { name: 'Ankle Hops (bilateral)', sets: '4×10', reps: '10', load: 'BW', notes: 'Low-amplitude bilateral hops — reactive ankle stiffness' },
+        { name: 'Back Extension', sets: '3×10', reps: '10', load: '+plate', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 14, phase: 'p2', date: '4 Aug',
+    focus: 'Phase 2 peak — deload into Phase 3',
+    km: 45,
+    phtNote: 'Deload. Assess overall tendon status before Phase 3 plyometric escalation.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A (Deload)', detail: '-20% all' },
+      { day: 'TUE', type: 'RUN', label: 'Easy + Strides', detail: '40 min easy + 6×100m strides' },
+      { day: 'WED', type: 'GYM', label: 'Upper (Deload)', detail: '-20%' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior (Deload)', detail: '-20%' },
+      { day: 'SAT', type: 'RUN', label: 'Moderate Long', detail: '80 min easy Z2' },
+      { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A (Deload)', exercises: [
+        { name: 'Barbell Squat', sets: '3×5', reps: '5', load: '-20% vs W13', notes: '' },
+        { name: 'Hip Thrust (bilateral)', sets: '3×10', reps: '10', load: '-20%', notes: 'Deload' },
+        { name: 'Leg Press', sets: '3×6', reps: '6', load: '-20%', notes: '' },
+        { name: 'Bulgarian Split Squat', sets: '2×8/leg', reps: '8/leg', load: '-20%', notes: '' },
+        { name: 'Pogo Jumps', sets: '3×15', reps: '15', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2–3 min rest between reps.' },
+        { name: 'Calf Raise', sets: '3×12', reps: '12', load: 'Moderate', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper (Deload)', exercises: [
+        { name: 'Pull-Up', sets: '3×5', reps: '5', load: 'BW', notes: '' },
+        { name: 'Barbell Row', sets: '3×5', reps: '5', load: '-20%', notes: '' },
+        { name: 'Incline DB Press', sets: '2×8', reps: '8', load: '-20%', notes: '' },
+        { name: 'Face Pull', sets: '2×15', reps: '15', load: 'Light', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior (Deload)', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '3×8/leg', reps: '8/leg', load: '-20%', notes: '' },
+        { name: 'Single-Leg Hip Abduction (cable)', sets: '2×8/leg', reps: '8/leg', load: '-20%', notes: 'Hip stability, glute med — no ischial load' },
+        { name: 'Nordic Curl', sets: '2×6', reps: '6', load: 'BW', notes: '' },
+        { name: 'Ankle Hops', sets: '3×10', reps: '10', load: 'BW', notes: '' },
+      ]}
+    }
+  },
+
+  // ============ PHASE 3 ============
+  {
+    week: 15, phase: 'p3', date: '11 Aug',
+    focus: 'Phase 3 begins — lactate threshold blocks, full plyos, marathon build',
+    km: 72,
+    phtNote: 'Full plyometric work begins: bounding, depth drops. Physio review before starting.',
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A + Full Plyo', detail: 'Squat + bounding intro' },
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '50 min easy Z2 — double day PM' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 3×12 min @ LT2 (4:10–4:14/km) · 90s float @ Z2 (not full stop) · CD 15 min — 81 min · float recovery makes this harder than it looks' },
+      { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: '' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: 'Single-leg + depth drops' },
+      { day: 'FRI', type: 'RUN', label: 'Easy', detail: '60 min easy Z2 — double day PM' },
+      { day: 'SAT', type: 'RUN', label: 'Long', detail: '135 min progression: 45 min Z1 → 30 min Z2 → 25 min upper Z2 → 20 min Z3 → 15 min LT2 — each block faster, finish strong' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '55 min easy Z1 — recovery' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A + Bounding', exercises: [
+        { name: 'Barbell Squat', sets: '5×3', reps: '3', load: '85% 1RM', notes: 'Shift to heavy triples — max strength phase' },
+        { name: 'Barbell Hip Thrust', sets: '4×6', reps: '6', load: 'Heavy', notes: 'Max load. Explosive concentric, controlled lower.' },
+        { name: 'Leg Press', sets: '4×5', reps: '5', load: 'Heavy', notes: '' },
+        { name: 'Bulgarian Split Squat', sets: '3×6/leg', reps: '6/leg', load: 'Heavy', notes: '' },
+        { name: 'Broad Jump', sets: '4×5', reps: '5', load: 'BW', notes: 'Max horizontal power — full extension, stick landing' },
+        { name: 'Bounding (A-skip to bound)', sets: '4×20m', reps: '20m', load: 'BW', notes: 'Triple extension focus — hip/knee/ankle' },
+        { name: 'Single-Leg Calf Raise', sets: '4×10/leg', reps: '10/leg', load: 'Heavy', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper', exercises: [
+        { name: 'Weighted Pull-Up', sets: '5×3', reps: '3', load: 'Heavy', notes: '5×3 max strength phase' },
+        { name: 'Barbell Row', sets: '4×4', reps: '4', load: 'Heavy', notes: '' },
+        { name: 'Incline DB Press', sets: '3×6', reps: '6', load: 'Heavy', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+        { name: 'EZ Bar Curl', sets: '3×6', reps: '6', load: 'Heavy', notes: '' },
+        { name: 'Close Grip Bench', sets: '3×5', reps: '5', load: 'Heavy', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior + Depth Drops', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '4×6/leg', reps: '6/leg', load: 'Heavy', notes: '' },
+        { name: 'Single-Leg Hip Abduction (cable)', sets: '3×6/leg', reps: '6/leg', load: 'Heavy', notes: 'Hip stability, glute med — no ischial load' },
+        { name: 'Single-Leg Curl', sets: '3×8/leg', reps: '8/leg', load: 'Heavy', notes: '' },
+        { name: 'Nordic Curl', sets: '3×8', reps: '8', load: 'BW', notes: '' },
+        { name: 'Depth Drop (20cm box)', sets: '4×6', reps: '6', load: 'BW', notes: 'Drop from box — absorb fast, minimal ground contact. Assess PHT.' },
+        { name: 'Pogo Jumps', sets: '3×20', reps: '20', load: 'BW', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 16, phase: 'p3', date: '18 Aug',
+    focus: 'Threshold volume builds, first marathon-specific long run',
+    km: 80,
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A + Plyo', detail: 'Heavy triples + bounding' },
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '50 min easy Z2 — double day PM' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 2×20 min @ LT2 (4:10–4:14/km) · 3 min float @ Z2 between (not jog stop) · CD 15 min — 68 min · broken tempo format' },
+      { day: 'WED', type: 'GYM', label: 'Upper', detail: '+5% heavy triples' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: '+load' },
+      { day: 'FRI', type: 'RUN', label: 'Easy', detail: '65 min easy Z2 — double day PM' },
+      { day: 'SAT', type: 'RUN', label: 'Long MP', detail: '145 min cutdown: 40 min Z1 → 35 min Z2 → 30 min upper Z2 → 25 min Z3 → 15 min MP — each 30-min block progressively faster, no recovery between' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '60 min easy Z1' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A + Plyo', exercises: [
+        { name: 'Barbell Squat', sets: '5×3', reps: '3', load: '+5% vs W15', notes: '' },
+        { name: 'Barbell Hip Thrust', sets: '4×6', reps: '6', load: '+5kg vs W15', notes: '' },
+        { name: 'Leg Press', sets: '4×5', reps: '5', load: '+5%', notes: '' },
+        { name: 'Bulgarian Split Squat', sets: '3×6/leg', reps: '6/leg', load: '+5kg', notes: '' },
+        { name: 'Broad Jump', sets: '4×5', reps: '5', load: 'BW', notes: '' },
+        { name: 'Bounding', sets: '4×25m', reps: '25m', load: 'BW', notes: '+5m distance' },
+        { name: 'Single-Leg Calf Raise', sets: '4×10/leg', reps: '10/leg', load: '+load', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper', exercises: [
+        { name: 'Weighted Pull-Up', sets: '5×3', reps: '3', load: '+2.5kg', notes: '' },
+        { name: 'Barbell Row', sets: '4×4', reps: '4', load: '+5%', notes: '' },
+        { name: 'Incline DB Press', sets: '3×6', reps: '6', load: '+2.5kg', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+        { name: 'EZ Bar Curl', sets: '3×6', reps: '6', load: '+2.5kg', notes: '' },
+        { name: 'Close Grip Bench', sets: '3×5', reps: '5', load: '+2.5kg', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior + Explosive', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '4×6/leg', reps: '6/leg', load: '+5kg', notes: '' },
+        { name: 'Single-Leg Hip Abduction (cable)', sets: '3×6/leg', reps: '6/leg', load: '+2.5kg', notes: 'Hip stability, glute med — no ischial load' },
+        { name: 'Single-Leg Curl', sets: '3×8/leg', reps: '8/leg', load: '+2.5kg', notes: '' },
+        { name: 'Nordic Curl', sets: '3×8', reps: '8', load: 'BW', notes: '' },
+        { name: 'Depth Drop (25cm)', sets: '4×6', reps: '6', load: 'BW', notes: 'Progress box height' },
+        { name: 'Pogo Jumps', sets: '3×25', reps: '25', load: 'BW', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 17, phase: 'p3', date: '25 Aug',
+    focus: 'Deload — recovery before final peak block',
+    km: 52,
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A (Deload)', detail: '-20%' },
+      { day: 'TUE', type: 'RUN', label: 'Easy + Strides', detail: '40 min easy + 6×100m strides — deload' },
+      { day: 'WED', type: 'GYM', label: 'Upper (Deload)', detail: '-20%' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior (Deload)', detail: '-20%' },
+      { day: 'SAT', type: 'RUN', label: 'Moderate Long', detail: '80 min easy Z2 + 6×20s strides — deload, feel fast without accumulating fatigue' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '45 min easy Z1' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A (Deload)', exercises: [
+        { name: 'Barbell Squat', sets: '3×3', reps: '3', load: '-20%', notes: '' },
+        { name: 'Barbell Hip Thrust', sets: '3×8', reps: '8', load: '-20%', notes: 'Deload' },
+        { name: 'Leg Press', sets: '3×5', reps: '5', load: '-20%', notes: '' },
+        { name: 'BSS', sets: '2×6/leg', reps: '6/leg', load: '-20%', notes: '' },
+        { name: 'Broad Jump', sets: '3×4', reps: '4', load: 'BW', notes: '' },
+        { name: 'Calf Raise', sets: '3×10', reps: '10', load: 'Moderate', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper (Deload)', exercises: [
+        { name: 'Pull-Up', sets: '3×3', reps: '3', load: 'BW', notes: '' },
+        { name: 'Barbell Row', sets: '3×4', reps: '4', load: '-20%', notes: '' },
+        { name: 'Incline DB Press', sets: '2×6', reps: '6', load: '-20%', notes: '' },
+        { name: 'Face Pull', sets: '2×15', reps: '15', load: 'Light', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior (Deload)', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '3×6/leg', reps: '6/leg', load: '-20%', notes: '' },
+        { name: 'Single-Leg Hip Abduction (cable)', sets: '2×6/leg', reps: '6/leg', load: '-20%', notes: 'Hip stability, glute med — no ischial load' },
+        { name: 'Nordic Curl', sets: '2×6', reps: '6', load: 'BW', notes: '' },
+        { name: 'Depth Drop', sets: '3×5', reps: '5', load: 'BW', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 18, phase: 'p3', date: '1 Sep',
+    focus: 'Peak block begins — threshold + MP long runs, max mileage',
+    km: 100,
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A + Plyo', detail: 'Return to peak loads' },
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '50 min easy Z2 — double day PM' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · progressive threshold: 15 min @ 4:18/km → 12 min @ 4:13/km → 9 min @ 4:08/km · 2 min jog rec between · CD 15 min — 81 min · intensity escalates each rep' },
+      { day: 'WED', type: 'GYM', label: 'Upper', detail: 'Return to peak loads' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: '' },
+      { day: 'FRI', type: 'RUN', label: 'Easy', detail: '65 min easy Z2 — double day PM' },
+      { day: 'SAT', type: 'RUN', label: 'Peak Long', detail: '155 min: 35e + 50mp (4:14–4:16/km) + 15e + 35mp (4:12–4:14/km) + 20e — two sustained MP blocks, second block faster than first' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '65 min easy Z1' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A + Plyo (Peak)', exercises: [
+        { name: 'Barbell Squat', sets: '5×3', reps: '3', load: '+5% vs W16', notes: '' },
+        { name: 'Barbell Hip Thrust', sets: '4×5', reps: '5', load: '+5kg vs W16', notes: 'Explosive. Peak strength.' },
+        { name: 'Leg Press', sets: '4×5', reps: '5', load: '+5%', notes: '' },
+        { name: 'BSS', sets: '3×6/leg', reps: '6/leg', load: '+5kg', notes: '' },
+        { name: 'Broad Jump', sets: '4×5', reps: '5', load: 'BW', notes: '' },
+        { name: 'Bounding', sets: '4×30m', reps: '30m', load: 'BW', notes: '' },
+        { name: 'Depth Jump (30cm)', sets: '4×5', reps: '5', load: 'BW', notes: 'Full depth jump — absorb and immediately rebound. Maximal.' },
+      ]},
+      dayB: { label: 'WED — Upper', exercises: [
+        { name: 'Weighted Pull-Up', sets: '5×3', reps: '3', load: '+5% vs W16', notes: '' },
+        { name: 'Barbell Row', sets: '4×4', reps: '4', load: '+5%', notes: '' },
+        { name: 'Incline DB Press', sets: '3×5', reps: '5', load: '+2.5kg', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+        { name: 'EZ Bar Curl', sets: '3×5', reps: '5', load: '+2.5kg', notes: '' },
+        { name: 'Close Grip Bench', sets: '3×5', reps: '5', load: '+2.5kg', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior + Explosive', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '4×5/leg', reps: '5/leg', load: 'Heavy', notes: '' },
+        { name: 'Single-Leg Hip Abduction (cable)', sets: '3×5/leg', reps: '5/leg', load: 'Heavy', notes: 'Hip stability, glute med — no ischial load' },
+        { name: 'Single-Leg Curl', sets: '3×8/leg', reps: '8/leg', load: 'Heavy', notes: '' },
+        { name: 'Nordic Curl', sets: '3×8', reps: '8', load: 'BW', notes: '' },
+        { name: 'Depth Jump (30cm)', sets: '3×5', reps: '5', load: 'BW', notes: '' },
+        { name: 'Pogo Jumps', sets: '3×25', reps: '25', load: 'BW', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 19, phase: 'p3', date: '8 Sep',
+    focus: 'Peak block week 2 — threshold maintained, volume at ceiling',
+    km: 109,
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A + Plyo', detail: '+5% all' },
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '55 min easy Z2 — double day PM' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · LT pyramid: 8 min + 10 min + 14 min + 10 min + 8 min @ LT2 (4:08–4:13/km) · 90s float rec · CD 15 min — 95 min · longest rep at the centre of the set' },
+      { day: 'WED', type: 'GYM', label: 'Upper', detail: '+5%' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: '+load' },
+      { day: 'FRI', type: 'RUN', label: 'Easy', detail: '70 min easy Z2 — double day PM' },
+      { day: 'SAT', type: 'RUN', label: 'Peak Long', detail: '170 min undulating: 20e + 20mp + 20e + 20mp + 20e + 20mp + 20e + 20mp + 10e — 8 alternating Z2/MP blocks · teaches body to clear lactate at race pace repeatedly' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '70 min easy Z1' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A + Plyo', exercises: [
+        { name: 'Barbell Squat', sets: '5×3', reps: '3', load: '+5%', notes: '' },
+        { name: 'Barbell Hip Thrust', sets: '4×5', reps: '5', load: '+5kg', notes: '' },
+        { name: 'Leg Press', sets: '4×5', reps: '5', load: '+5%', notes: '' },
+        { name: 'BSS', sets: '3×6/leg', reps: '6/leg', load: '+5kg', notes: '' },
+        { name: 'Broad Jump', sets: '5×5', reps: '5', load: 'BW', notes: '+1 set' },
+        { name: 'Bounding', sets: '4×30m', reps: '30m', load: 'BW', notes: '' },
+        { name: 'Depth Jump (30cm)', sets: '4×5', reps: '5', load: 'BW', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper', exercises: [
+        { name: 'Weighted Pull-Up', sets: '5×3', reps: '3', load: '+2.5kg', notes: '' },
+        { name: 'Barbell Row', sets: '4×4', reps: '4', load: '+5%', notes: '' },
+        { name: 'Incline DB Press', sets: '3×5', reps: '5', load: '+2.5kg', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+        { name: 'EZ Bar Curl', sets: '3×5', reps: '5', load: '+2.5kg', notes: '' },
+        { name: 'Close Grip Bench', sets: '3×5', reps: '5', load: '+2.5kg', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior + Explosive', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '4×5/leg', reps: '5/leg', load: '+5kg', notes: '' },
+        { name: 'Single-Leg Hip Abduction (cable)', sets: '3×5/leg', reps: '5/leg', load: '+2.5kg', notes: 'Hip stability, glute med — no ischial load' },
+        { name: 'Nordic Curl', sets: '3×8', reps: '8', load: 'BW', notes: '' },
+        { name: 'Depth Jump', sets: '4×5', reps: '5', load: 'BW', notes: '' },
+        { name: 'Pogo Jumps', sets: '3×25', reps: '25', load: 'BW', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 20, phase: 'p3', date: '15 Sep',
+    focus: 'Peak mileage — 85km, threshold sustained',
+    km: 105,
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A + Plyo', detail: 'Maintain peak loads' },
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '55 min easy Z2 — double day PM' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 35 min continuous @ LT2 (4:08–4:12/km) · 5 min float · 15 min @ MP (4:14–4:16/km) · CD 15 min — 85 min · longest unbroken threshold effort of the plan' },
+      { day: 'WED', type: 'GYM', label: 'Upper', detail: 'Maintain' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: 'Maintain' },
+      { day: 'FRI', type: 'RUN', label: 'Easy', detail: '70 min easy Z2 — double day PM' },
+      { day: 'SAT', type: 'RUN', label: 'Peak Long', detail: '160 min negative split: 80 min easy Z1–Z2 (genuinely easy) → 80 min @ MP (4:12–4:16/km) — no blocks, no recovery, second half is one continuous MP effort' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '70 min easy Z1' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A + Plyo (Peak)', exercises: [
+        { name: 'Barbell Squat', sets: '4×3', reps: '3', load: 'Maintain', notes: 'Drop 1 set — protect for mileage' },
+        { name: 'Barbell Hip Thrust', sets: '3×6', reps: '6', load: 'Maintain', notes: '' },
+        { name: 'Leg Press', sets: '3×5', reps: '5', load: 'Maintain', notes: '' },
+        { name: 'BSS', sets: '3×5/leg', reps: '5/leg', load: 'Maintain', notes: '' },
+        { name: 'Broad Jump', sets: '4×5', reps: '5', load: 'BW', notes: '' },
+        { name: 'Bounding', sets: '3×30m', reps: '30m', load: 'BW', notes: '' },
+        { name: 'Depth Jump', sets: '3×5', reps: '5', load: 'BW', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper', exercises: [
+        { name: 'Weighted Pull-Up', sets: '4×3', reps: '3', load: 'Maintain', notes: '' },
+        { name: 'Barbell Row', sets: '3×4', reps: '4', load: 'Maintain', notes: '' },
+        { name: 'Incline DB Press', sets: '3×5', reps: '5', load: 'Maintain', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior + Explosive', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '3×5/leg', reps: '5/leg', load: 'Maintain', notes: 'Drop 1 set' },
+        { name: 'Single-Leg Hip Abduction (cable)', sets: '3×5/leg', reps: '5/leg', load: 'Maintain', notes: 'Hip stability, glute med — no ischial load' },
+        { name: 'Nordic Curl', sets: '3×6', reps: '6', load: 'BW', notes: '' },
+        { name: 'Depth Jump', sets: '3×5', reps: '5', load: 'BW', notes: '' },
+        { name: 'Pogo Jumps', sets: '3×20', reps: '20', load: 'BW', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 21, phase: 'p3', date: '22 Sep',
+    focus: 'Volume descent — threshold intensity held, mileage drops',
+    km: 92,
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A + Plyo', detail: 'Maintain loads, reduce volume' },
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '50 min easy Z2 — double day PM' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 6×6 min @ LT2 (4:08–4:10/km) · 90s jog rec · CD 15 min — 81 min · short reps, high density, faster than previous weeks' },
+      { day: 'WED', type: 'GYM', label: 'Upper', detail: '' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: '' },
+      { day: 'FRI', type: 'RUN', label: 'Easy', detail: '65 min easy Z2' },
+      { day: 'SAT', type: 'RUN', label: 'Long MP', detail: '150 min broken marathon: 30e + 30mp + 3 float + 30mp + 3 float + 25mp + 3 float + 20mp + 6e — sustained MP load with 3 min floats · simulates km 25–38 fatigue' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '60 min easy Z1' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A + Plyo', exercises: [
+        { name: 'Barbell Squat', sets: '4×3', reps: '3', load: 'Maintain', notes: '' },
+        { name: 'Barbell Hip Thrust', sets: '3×6', reps: '6', load: 'Maintain', notes: '' },
+        { name: 'Leg Press', sets: '3×5', reps: '5', load: 'Maintain', notes: '' },
+        { name: 'BSS', sets: '3×5/leg', reps: '5/leg', load: 'Maintain', notes: '' },
+        { name: 'Broad Jump', sets: '4×5', reps: '5', load: 'BW', notes: '' },
+        { name: 'Bounding', sets: '3×30m', reps: '30m', load: 'BW', notes: '' },
+        { name: 'Depth Jump', sets: '3×4', reps: '4', load: 'BW', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper', exercises: [
+        { name: 'Weighted Pull-Up', sets: '4×3', reps: '3', load: 'Maintain', notes: '' },
+        { name: 'Barbell Row', sets: '3×4', reps: '4', load: 'Maintain', notes: '' },
+        { name: 'Incline DB Press', sets: '3×5', reps: '5', load: 'Maintain', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: '', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior + Explosive', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '3×5/leg', reps: '5/leg', load: 'Maintain', notes: '' },
+        { name: 'Single-Leg Hip Abduction (cable)', sets: '3×5/leg', reps: '5/leg', load: 'Maintain', notes: 'Hip stability, glute med — no ischial load' },
+        { name: 'Nordic Curl', sets: '3×6', reps: '6', load: 'BW', notes: '' },
+        { name: 'Pogo Jumps', sets: '3×20', reps: '20', load: 'BW', notes: '' },
+      ]}
+    }
+  },
+  {
+    week: 22, phase: 'p3', date: '29 Sep',
+    focus: 'Final quality week — last threshold session, last MP long run',
+    km: 68,
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A (Light)', detail: 'Reduce to 3×3, maintain intensity' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 3×10 min @ MP+5s/km (4:19–4:21/km) · 2 min jog rec · CD 15 min — 60 min · race-pace sharpener not a LT grind · feel controlled and fast' },
+      { day: 'WED', type: 'GYM', label: 'Upper (Light)', detail: '' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Posterior (Light)', detail: 'No plyos this week' },
+      { day: 'FRI', type: 'RUN', label: 'Easy', detail: '50 min easy Z2' },
+      { day: 'SAT', type: 'RUN', label: 'Last Long', detail: '90 min marathon preview: 25e + 40mp (4:14–4:16/km) + 5 float + 15mp (4:12–4:14/km) + 5e — simulate race-day surge · finish feeling like you have more left' },
+      { day: 'SUN', type: 'RUN', label: 'Easy', detail: '50 min easy Z1' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A (Pre-Taper)', exercises: [
+        { name: 'Barbell Squat', sets: '3×3', reps: '3', load: 'Maintain intensity', notes: '' },
+        { name: 'Barbell Hip Thrust', sets: '3×6', reps: '6', load: 'Heavy', notes: 'Last heavy hip thrust before taper.' },
+        { name: 'Leg Press', sets: '3×5', reps: '5', load: 'Maintain', notes: '' },
+        { name: 'BSS', sets: '2×5/leg', reps: '5/leg', load: 'Maintain', notes: '' },
+        { name: 'Calf Raise', sets: '3×10', reps: '10', load: 'Moderate', notes: '' },
+      ]},
+      dayB: { label: 'WED — Upper (Light)', exercises: [
+        { name: 'Pull-Up', sets: '3×3', reps: '3', load: 'BW / light', notes: '' },
+        { name: 'Barbell Row', sets: '3×4', reps: '4', load: 'Moderate', notes: '' },
+        { name: 'Face Pull', sets: '3×15', reps: '15', load: 'Light', notes: '' },
+      ]},
+      dayC: { label: 'FRI — Posterior (No Plyos)', exercises: [
+        { name: 'Single-Leg Hip Thrust', sets: '3×5/leg', reps: '5/leg', load: 'Moderate-heavy', notes: '' },
+        { name: 'Nordic Curl', sets: '2×6', reps: '6', load: 'BW', notes: '' },
+        { name: 'Single-Leg Curl', sets: '2×8/leg', reps: '8/leg', load: 'Moderate', notes: '' },
+      ]}
+    }
+  },
+
+  // ============ TAPER ============
+  {
+    week: 23, phase: 'taper', date: '6 Oct',
+    focus: 'Taper week 1 — volume -40%, intensity maintained',
+    km: 45,
+    days: [
+      { day: 'MON', type: 'GYM', label: 'Lower A (Taper)', detail: 'Light — 3×3, no fatigue' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold Sharpener', detail: '2×10 min @ MP (4:12–4:15/km) · 3 min jog' },
+      { day: 'WED', type: 'REST', label: 'Rest', detail: '' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'FRI', type: 'GYM', label: 'Upper (Taper)', detail: 'Light — no fatigue' },
+      { day: 'SAT', type: 'RUN', label: 'Moderate Long', detail: '90 min — 65e + 25mp' },
+      { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
+    ],
+    gym: {
+      dayA: { label: 'MON — Lower A (Taper)', exercises: [
+        { name: 'Barbell Squat', sets: '3×3', reps: '3', load: '80% 1RM', notes: 'Maintain intensity, cut volume' },
+        { name: 'Hip Thrust (bilateral)', sets: '2×8', reps: '8', load: 'Moderate', notes: 'Keep movement pattern sharp, no fatigue.' },
+        { name: 'Leg Press', sets: '2×5', reps: '5', load: 'Heavy', notes: '' },
+        { name: 'BSS', sets: '2×4/leg', reps: '4/leg', load: 'Heavy', notes: '' },
+        { name: 'Calf Raise', sets: '2×10', reps: '10', load: 'Moderate', notes: '' },
+      ]},
+      dayB: { label: 'FRI — Upper (Taper)', exercises: [
+        { name: 'Pull-Up', sets: '3×3', reps: '3', load: 'BW', notes: '' },
+        { name: 'Face Pull', sets: '3×12', reps: '12', load: 'Light', notes: '' },
+        { name: 'Core circuit', sets: '2×—', reps: '—', load: 'BW', notes: '' },
+      ]},
+      dayC: { label: '— No posterior chain this week —', exercises: [] }
+    }
+  },
+  {
+    week: 24, phase: 'taper', date: '13 Oct',
+    focus: 'Race week — minimal load, stay sharp. Amsterdam Oct 18.',
+    km: 20,
+    phtNote: 'No gym this week. Legs only. Trust the training.',
+    days: [
+      { day: 'MON', type: 'RUN', label: 'Easy', detail: '30 min very easy Z1' },
+      { day: 'TUE', type: 'RUN', label: 'Sharpener', detail: '25 min easy + 4×100m strides + 2×200m @ 5km pace' },
+      { day: 'WED', type: 'REST', label: 'Rest', detail: '' },
+      { day: 'THU', type: 'RUN', label: 'Easy Shakeout', detail: '20 min very easy + 4×100m strides' },
+      { day: 'FRI', type: 'REST', label: 'Rest', detail: '' },
+      { day: 'SAT', type: 'REST', label: 'Rest / Travel', detail: 'Race day prep — sleep, hydration, carb load' },
+      { day: 'SUN', type: 'RUN', label: 'AMSTERDAM MARATHON', detail: '⚡ Race Day — 4:16/km target · Sub-3:00' },
+    ],
+    gym: {
+      dayA: { label: '— No gym this week —', exercises: [] },
+      dayB: { label: '', exercises: [] },
+      dayC: { label: '', exercises: [] }
+    }
+  },
+];
+
+
+const GYM_MAP = { MON: "dayA", WED: "dayB", FRI: "dayC" };
+
+const PHASE_STYLE = {
+  p1:    { col: "#1D4ED8", bg: "#DBEAFE", bd: "#93C5FD" },
+  p2:    { col: "#C2410C", bg: "#FFEDD5", bd: "#FDBA74" },
+  p3:    { col: "#854D0E", bg: "#FEF9C3", bd: "#FDE047" },
+  taper: { col: "#6B21A8", bg: "#F3E8FF", bd: "#C084FC" },
+};
+const PHASE_LBL = { p1:"Phase 1", p2:"Phase 2", p3:"Phase 3", taper:"Taper" };
+
+function typeCol(day) {
+  if (day.type === "GYM") return "#1D4ED8";
+  const l = day.label;
+  if (l.includes("AMSTERDAM") || l.includes("Long")) return "#854D0E";
+  if (l.includes("Threshold")) return "#C2410C";
+  if (l.includes("Speed") || l.includes("Hill")) return "#B45309";
+  if (l.includes("TIME TRIAL") || l.includes("Sharpener")) return "#047857";
+  if (l.includes("Altitude")) return "#0F766E";
+  return "#15803D";
+}
+
+const s = {
+  body:    { background:"#F9FAFB", color:"#111827", fontFamily:"Arial,system-ui,sans-serif", fontSize:14, minHeight:"100vh" },
+  hdr:     { padding:"20px 16px 14px", borderBottom:"1px solid #E5E7EB", background:"#FFFFFF" },
+  h1:      { fontSize:36, fontWeight:800, letterSpacing:2, lineHeight:1, margin:0, color:"#111827" },
+  h1em:    { color:"#2563EB" },
+  sub:     { fontSize:10, color:"#6B7280", letterSpacing:2, textTransform:"uppercase", marginTop:4 },
+  metaRow: { display:"flex", gap:20, marginTop:10 },
+  metaItm: { display:"flex", flexDirection:"column" },
+  metaLbl: { fontSize:9, color:"#9CA3AF", letterSpacing:2, textTransform:"uppercase" },
+  metaVal: { fontSize:20, fontWeight:800, color:"#2563EB" },
+
+  phaseList: { borderBottom:"1px solid #E5E7EB" },
+  phaseRow:  { display:"flex", gap:12, padding:"14px 16px", borderBottom:"1px solid #E5E7EB", alignItems:"flex-start", background:"#FFFFFF" },
+  phaseDot:  { width:8, height:8, borderRadius:"50%", flexShrink:0, marginTop:5 },
+  phaseH:    { fontSize:15, fontWeight:700, margin:0 },
+  phaseP:    { fontSize:12, color:"#4B5563", lineHeight:1.6, marginTop:2 },
+  phaseBadge:{ display:"inline-block", fontSize:9, letterSpacing:1, marginTop:5, padding:"2px 7px", borderRadius:3, fontWeight:600 },
+
+  filterBar: { display:"flex", flexWrap:"wrap", gap:6, padding:"10px 16px", borderBottom:"1px solid #E5E7EB", background:"#FFFFFF" },
+  fbtn:      { padding:"6px 12px", borderRadius:4, border:"1px solid #D1D5DB", background:"#FFFFFF", color:"#6B7280", fontSize:11, letterSpacing:1, textTransform:"uppercase", cursor:"pointer", fontWeight:500 },
+  fbtnOn:    { borderColor:"#2563EB", color:"#2563EB", background:"#EFF6FF" },
+
+  weekList:  { paddingBottom:60 },
+  weekBlock: { borderBottom:"1px solid #E5E7EB", background:"#FFFFFF" },
+  weekBtn:   { display:"flex", alignItems:"center", gap:12, padding:"14px 16px", cursor:"pointer", width:"100%", background:"none", border:"none", color:"#111827", textAlign:"left" },
+  wNum:      { fontSize:24, fontWeight:800, lineHeight:1, flexShrink:0, width:44 },
+  wInfo:     { flex:1, minWidth:0 },
+  wDate:     { fontSize:9, color:"#9CA3AF", letterSpacing:1 },
+  wBarRow:   { display:"flex", alignItems:"center", gap:8, marginTop:3 },
+  wBar:      { height:4, background:"#E5E7EB", borderRadius:2, width:80 },
+  wKm:       { fontSize:10, color:"#6B7280", fontWeight:600 },
+  wFocus:    { fontSize:11, color:"#6B7280", marginTop:3, lineHeight:1.4 },
+  wTag:      { fontSize:8, letterSpacing:1, textTransform:"uppercase", padding:"3px 7px", borderRadius:3, flexShrink:0, whiteSpace:"nowrap", fontWeight:700 },
+  wArr:      { fontSize:10, color:"#9CA3AF", flexShrink:0, transition:"transform .2s" },
+
+  // calendar grid — 7 fixed columns MON–SUN (desktop)
+  calGrid:   { display:"grid", gridTemplateColumns:"repeat(7,1fr)", gap:0, borderLeft:"1px solid #E5E7EB", borderTop:"1px solid #E5E7EB" },
+  calHdrRow: { display:"grid", gridTemplateColumns:"repeat(7,1fr)", background:"#F3F4F6", borderLeft:"1px solid #E5E7EB" },
+  calHdrCell:{ padding:"6px 8px", fontSize:9, fontWeight:700, color:"#6B7280", letterSpacing:2, textTransform:"uppercase", borderRight:"1px solid #E5E7EB", borderBottom:"1px solid #E5E7EB" },
+  calCell:   { borderRight:"1px solid #E5E7EB", borderBottom:"1px solid #E5E7EB", minHeight:100, padding:0, position:"relative" },
+  calCellInner:{ padding:"8px 10px 10px", height:"100%", cursor:"pointer" },
+  calCellRest:{ borderRight:"1px solid #E5E7EB", borderBottom:"1px solid #E5E7EB", minHeight:100, background:"#FAFAFA", display:"flex", alignItems:"center", justifyContent:"center" },
+  calRestTxt:{ fontSize:8, color:"#D1D5DB", letterSpacing:2, textTransform:"uppercase" },
+  calDow:    { fontSize:8, fontWeight:800, color:"#9CA3AF", letterSpacing:1.5, textTransform:"uppercase", marginBottom:5 },
+  calType:   { fontSize:10, fontWeight:700, letterSpacing:0.3, marginBottom:3, lineHeight:1.3 },
+  calDetail: { fontSize:10, color:"#6B7280", lineHeight:1.5 },
+  // mobile list view
+  mobList:   { padding:"0 0 4px" },
+  mobDay:    { display:"flex", alignItems:"stretch", borderBottom:"1px solid #F3F4F6", cursor:"pointer", minHeight:56 },
+  mobDayRest:{ display:"flex", alignItems:"center", borderBottom:"1px solid #F3F4F6", minHeight:44, padding:"0 16px" },
+  mobDowCol: { width:44, flexShrink:0, display:"flex", alignItems:"center", justifyContent:"center", padding:"10px 0" },
+  mobDowTxt: { fontSize:9, fontWeight:800, letterSpacing:1, textTransform:"uppercase", color:"#9CA3AF" },
+  mobContent:{ flex:1, padding:"10px 12px 10px 8px", display:"flex", flexDirection:"column", justifyContent:"center" },
+  mobLabel:  { fontSize:13, fontWeight:700, marginBottom:2, lineHeight:1.3 },
+  mobDetail: { fontSize:11, color:"#6B7280", lineHeight:1.4 },
+  mobDot:    { width:10, height:10, borderRadius:"50%", flexShrink:0, marginTop:3, alignSelf:"flex-start" },
+  mobRestTxt:{ fontSize:10, color:"#D1D5DB" },
+  // keep old names for drawer compatibility
+  grid:      { display:"grid", gridTemplateColumns:"1fr 1fr", gap:8, padding:"0 16px 14px", paddingTop:8 },
+  card:      { background:"#F9FAFB", border:"1px solid #E5E7EB", borderRadius:8, padding:12, cursor:"pointer", minHeight:90 },
+  cardRest:  { background:"transparent", border:"1px solid transparent", display:"flex", alignItems:"center", justifyContent:"center", minHeight:50 },
+  restTxt:   { fontSize:9, color:"#D1D5DB", letterSpacing:1, textTransform:"uppercase" },
+  dcDow:     { fontSize:9, color:"#9CA3AF", letterSpacing:1, textTransform:"uppercase", marginBottom:5, fontWeight:600 },
+  dcTitle:   { fontSize:13, fontWeight:700, marginBottom:4 },
+  dcDetail:  { fontSize:11, color:"#6B7280", lineHeight:1.5 },
+
+  backdrop:  { position:"fixed", inset:0, background:"rgba(0,0,0,0.5)", zIndex:50 },
+  drawer:    { position:"fixed", left:0, right:0, bottom:0, background:"#FFFFFF", borderRadius:"14px 14px 0 0", borderTop:"1px solid #E5E7EB", boxShadow:"0 -4px 24px rgba(0,0,0,0.12)", zIndex:51, maxHeight:"88vh", overflowY:"auto" },
+  grip:      { width:36, height:4, background:"#D1D5DB", borderRadius:2, margin:"10px auto 0" },
+  dTop:      { position:"sticky", top:0, background:"#FFFFFF", padding:"12px 18px", borderBottom:"1px solid #E5E7EB", display:"flex", justifyContent:"space-between", alignItems:"center" },
+  dWk:       { fontSize:9, color:"#9CA3AF", letterSpacing:2, textTransform:"uppercase", marginBottom:2, fontWeight:600 },
+  dTitleTxt: { fontSize:22, fontWeight:800, letterSpacing:.5, color:"#111827" },
+  dClose:    { background:"#F3F4F6", border:"none", color:"#6B7280", width:32, height:32, borderRadius:"50%", fontSize:15, cursor:"pointer", fontWeight:700 },
+  dBody:     { padding:"16px 18px 48px" },
+  dDetailBox:{ background:"#EFF6FF", border:"1px solid #BFDBFE", borderRadius:8, padding:14, fontSize:13, lineHeight:1.8, marginBottom:12, color:"#1E40AF" },
+  dPht:      { background:"#FFF7ED", border:"1px solid #FED7AA", borderRadius:8, padding:"10px 14px", marginBottom:12, fontSize:11, color:"#C2410C", lineHeight:1.6 },
+  dSection:  { fontSize:9, color:"#9CA3AF", letterSpacing:2, textTransform:"uppercase", margin:"14px 0 8px", fontWeight:700 },
+  dEx:       { background:"#F9FAFB", border:"1px solid #E5E7EB", borderRadius:8, padding:13, marginBottom:8 },
+  dExName:   { fontSize:14, fontWeight:700, marginBottom:6, color:"#111827" },
+  dExMeta:   { display:"flex", flexWrap:"wrap", gap:12, marginBottom:5 },
+  dExMetaLbl:{ fontSize:11, color:"#9CA3AF", fontWeight:500 },
+  dExMetaVal:{ fontSize:11, color:"#2563EB", fontWeight:700 },
+  dExNotes:  { fontSize:11, fontStyle:"italic", color:"#6B7280", lineHeight:1.6, marginBottom:8 },
+  dInputRow: { display:"flex", gap:8, marginTop:6 },
+  dRec:      { display:"flex", alignItems:"center", gap:8, margin:"6px 0 2px", padding:"7px 10px", background:"#EFF6FF", border:"1px solid #BFDBFE", borderRadius:6 },
+  dRecLbl:   { fontSize:10, color:"#6B7280", flex:1 },
+  dRecVal:   { fontSize:15, fontWeight:800, color:"#1D4ED8", letterSpacing:0.5 },
+  dRecSub:   { fontSize:9, color:"#93C5FD", marginTop:1 },
+  dInput:    { flex:1, minWidth:0, background:"#FFFFFF", border:"1px solid #D1D5DB", borderRadius:6, padding:"9px 10px", fontSize:13, color:"#2563EB", outline:"none", fontFamily:"monospace", fontWeight:600 },
+  dInputNote:{ flex:1, minWidth:0, background:"#FFFFFF", border:"1px solid #D1D5DB", borderRadius:6, padding:"9px 10px", fontSize:13, color:"#374151", outline:"none", fontFamily:"Arial,sans-serif" },
+};
+
+
+// ── WEIGHT RECOMMENDATION ENGINE ─────────────────────────────────────────────
+// For a given exercise in a given week, find the most recent logged weight
+// and apply the progression instruction to suggest the next weight.
+
+function findLastLogged(exName, currentWeek, currentGymKey) {
+  // Search backwards through all weeks for the same exercise name
+  for (let wk = currentWeek - 1; wk >= 1; wk--) {
+    const w = WEEKS.find(x => x.week === wk);
+    if (!w || !w.gym) continue;
+    for (const gk of ['dayA','dayB','dayC']) {
+      const gd = w.gym[gk];
+      if (!gd || !gd.exercises) continue;
+      const idx = gd.exercises.findIndex(e => e.name === exName);
+      if (idx === -1) continue;
+      const sk = 'ams_' + wk + '_' + gk + '_' + idx;
+      const logged = syncGet(sk + '_kg');
+      if (logged && logged.trim() !== '') {
+        const kg = parseFloat(logged.replace(/[^0-9.]/g,''));
+        if (!isNaN(kg)) return { kg, week: wk, load: gd.exercises[idx].load };
+      }
+    }
+  }
+  return null;
+}
+
+function calcRecommended(targetLoad, exName, currentWeek, currentGymKey) {
+  if (!targetLoad) return null;
+  const tl = targetLoad.trim().toLowerCase();
+
+  // If it says BW or bodyweight — no recommendation needed
+  if (tl === 'bw' || tl.includes('bodyweight') || tl.includes('body weight')) return null;
+
+  const last = findLastLogged(exName, currentWeek, currentGymKey);
+
+  // Parse the instruction
+  const pctMatch  = tl.match(/^([+-])(\d+)%/);
+  const kgMatch   = tl.match(/^([+-])(\d+(?:\.\d+)?)\s*kg/);
+  const matchWeek = tl.match(/match w(\d+)/);
+  const deload    = tl.match(/(-\d+)%/);
+  const absolute  = tl.match(/^(\d+(?:\.\d+)?)\s*%\s*(\d+rm)/i);
+
+  if (pctMatch && last) {
+    const sign = pctMatch[1] === '+' ? 1 : -1;
+    const pct  = parseFloat(pctMatch[2]) / 100;
+    const rec  = Math.round((last.kg * (1 + sign * pct)) * 2) / 2; // round to nearest 0.5kg
+    return { rec, basis: last.kg, week: last.week, instruction: targetLoad };
+  }
+
+  if (kgMatch && last) {
+    const sign = kgMatch[1] === '+' ? 1 : -1;
+    const kg   = parseFloat(kgMatch[2]);
+    const rec  = last.kg + (sign * kg);
+    return { rec, basis: last.kg, week: last.week, instruction: targetLoad };
+  }
+
+  if (deload && !pctMatch && last) {
+    const pct = Math.abs(parseFloat(deload[1])) / 100;
+    const rec = Math.round((last.kg * (1 - pct)) * 2) / 2;
+    return { rec, basis: last.kg, week: last.week, instruction: targetLoad };
+  }
+
+  if (matchWeek) {
+    const targetWk = parseInt(matchWeek[1]);
+    // Find what was logged in that specific week
+    const w = WEEKS.find(x => x.week === targetWk);
+    if (w && w.gym) {
+      for (const gk of ['dayA','dayB','dayC']) {
+        const gd = w.gym[gk];
+        if (!gd || !gd.exercises) continue;
+        const idx = gd.exercises.findIndex(e => e.name === exName);
+        if (idx === -1) continue;
+        const sk = 'ams_' + targetWk + '_' + gk + '_' + idx;
+        const logged = syncGet(sk + '_kg');
+        if (logged && logged.trim() !== '') {
+          const kg = parseFloat(logged.replace(/[^0-9.]/g,''));
+          if (!isNaN(kg)) return { rec: kg, basis: kg, week: targetWk, instruction: 'Match W' + targetWk };
+        }
+      }
+    }
+    // If nothing logged for that week, fall through
+  }
+
+  // 1RM percentage
+  if (absolute) {
+    // Can't compute without a 1RM — skip
+    return null;
+  }
+
+  // "Heavy", "Maintain", "Light", "Moderate" — just show last logged as reference
+  if ((tl.includes('heavy') || tl.includes('maintain') || tl.includes('light') || tl.includes('moderate')) && last) {
+    return { rec: last.kg, basis: last.kg, week: last.week, instruction: targetLoad, isReference: true };
+  }
+
+  return null;
+}
+
+function DayDrawer({ w, day, onClose }) {
+  const gymKey = GYM_MAP[day.day];
+  const gymDay = gymKey && w.gym && w.gym[gymKey];
+  // tick forces re-render when sync data arrives
+  const [tick, setTick] = useState(0);
+  const [vals, setVals] = useState({});
+
+  React.useEffect(() => {
+    // If data already loaded, seed vals from cache immediately
+    if (_loaded) {
+      setTick(t => t + 1);
+      return;
+    }
+    // Otherwise subscribe and re-render when it arrives
+    const fn = () => setTick(t => t + 1);
+    onSyncStatus(fn);
+    // Fallback poll — in case event already fired before we subscribed
+    const poll = setInterval(() => {
+      if (_loaded) { setTick(t => t + 1); clearInterval(poll); }
+    }, 200);
+    return () => clearInterval(poll);
+  }, []);
+
+  function getVal(sk, field) {
+    const k = sk+"_"+field;
+    // Local edits take priority over cache
+    if (k in vals) return vals[k];
+    return syncGet(k);
+  }
+  function setVal(sk, field, v) {
+    const k = sk+"_"+field;
+    setVals(prev => ({...prev, [k]: v}));
+    syncSet(k, v);
+  }
+
+  return (
+    <>
+      <div style={s.backdrop} onClick={onClose} />
+      <div style={s.drawer}>
+        <div style={s.grip} />
+        <div style={s.dTop}>
+          <div>
+            <div style={s.dWk}>Week {w.week} · {day.day}</div>
+            <div style={s.dTitleTxt}>{day.type==="RUN"?"🏃 ":"🏋️ "}{day.label}</div>
+          </div>
+          <button style={s.dClose} onClick={onClose}>✕</button>
+        </div>
+        <div style={s.dBody}>
+          {day.type==="GYM" && w.phtNote && (
+            <div style={s.dPht}><strong style={{color:"#ff6b35"}}>⚠ PHT:</strong> {w.phtNote}</div>
+          )}
+          {day.detail && <div style={s.dDetailBox}>{day.detail}</div>}
+          {gymDay && gymDay.exercises && gymDay.exercises.length > 0 && (
+            <>
+              <div style={s.dSection}>Exercises</div>
+              {gymDay.exercises.map((e, ei) => {
+                const sk = "ams_"+w.week+"_"+gymKey+"_"+ei;
+                return (
+                  <div key={ei} style={s.dEx}>
+                    <div style={s.dExName}>{e.name}</div>
+                    <div style={s.dExMeta}>
+                      <span><span style={s.dExMetaLbl}>Sets </span><span style={s.dExMetaVal}>{e.sets}</span></span>
+                      <span><span style={s.dExMetaLbl}>Reps </span><span style={s.dExMetaVal}>{e.reps}</span></span>
+                      <span><span style={s.dExMetaLbl}>Target </span><span style={s.dExMetaVal}>{e.load}</span></span>
+                    </div>
+                    {e.notes && <div style={s.dExNotes}>{e.notes}</div>}
+                    {(() => {
+                      const rec = calcRecommended(e.load, e.name, w.week, gymKey);
+                      if (!rec) return null;
+                      return (
+                        <div style={s.dRec}>
+                          <div>
+                            <div style={s.dRecLbl}>{rec.isReference ? 'Last logged (reference)' : 'Recommended this session'}</div>
+                            <div style={s.dRecSub}>Based on {rec.basis}kg in W{rec.week} · {rec.instruction}</div>
+                          </div>
+                          <div style={s.dRecVal}>{rec.rec}kg</div>
+                        </div>
+                      );
+                    })()}
+                    <div style={s.dInputRow}>
+                      <input style={s.dInput} type="text" placeholder="actual kg"
+                        value={getVal(sk,"kg")} onChange={ev => setVal(sk,"kg",ev.target.value)} />
+                      <input style={s.dInputNote} type="text" placeholder="notes / RPE"
+                        value={getVal(sk,"note")} onChange={ev => setVal(sk,"note",ev.target.value)} />
+                    </div>
+                  </div>
+                );
+              })}
+            </>
+          )}
+        </div>
+      </div>
+    </>
+  );
+}
+
+function WeekRow({ w, phaseFilter }) {
+  const [open, setOpen] = useState(false);
+  const [activeDay, setActiveDay] = useState(null);
+  const ps = PHASE_STYLE[w.phase] || PHASE_STYLE.taper;
+  const pct = Math.min(100, Math.round(w.km / 85 * 100));
+
+  if (phaseFilter !== "all" && w.phase !== phaseFilter) return null;
+
+  return (
+    <div style={s.weekBlock}>
+      <button style={s.weekBtn} onClick={() => setOpen(o => !o)}>
+        <div style={{...s.wNum, color:ps.col}}>W{w.week}</div>
+        <div style={s.wInfo}>
+          <div style={s.wDate}>{w.date}</div>
+          <div style={s.wBarRow}>
+            <div style={s.wBar}><div style={{...s.wBar, width:pct+"%", background:"#e8ff47", height:3}} /></div>
+            <span style={s.wKm}>{w.km}km</span>
+          </div>
+          <div style={s.wFocus}>{w.focus}</div>
+        </div>
+        <span style={{...s.wTag, color:ps.col, background:ps.bg, border:"1px solid "+ps.bd}}>{PHASE_LBL[w.phase]}</span>
+        <span style={{...s.wArr, transform:open?"rotate(90deg)":"none"}}>▶</span>
+      </button>
+
+      {open && (() => {
+        const DOW_ORDER = ["MON","TUE","WED","THU","FRI","SAT","SUN"];
+        const DOW_FULL  = {MON:"Monday",TUE:"Tuesday",WED:"Wednesday",THU:"Thursday",FRI:"Friday",SAT:"Saturday",SUN:"Sunday"};
+        const dayMap = {};
+        DOW_ORDER.forEach(d => { dayMap[d] = []; });
+        w.days.forEach((day, i) => { if (dayMap[day.day]) dayMap[day.day].push({...day, idx: i}); });
+
+        const typeIcon = d => d.type==="RUN" ? "🏃" : d.type==="GYM" ? "🏋️" : "";
+        const typeBg = d => {
+          if (d.type==="REST") return "#FAFAFA";
+          const l = d.label;
+          if (d.type==="GYM" && l.includes("Altitude")) return "#F0FDFA";
+          if (d.type==="GYM") return "#EFF6FF";
+          if (l.includes("AMSTERDAM") || l.includes("Peak Long") || l.includes("Last Long")) return "#FEF9C3";
+          if (l.includes("Long")) return "#FFF7ED";
+          if (l.includes("Threshold") || l.includes("Speed") || l.includes("Hill") || l.includes("TIME TRIAL")) return "#FFF1F2";
+          return "#FFFFFF";
+        };
+        const typeDot = d => {
+          const l = d.label;
+          if (d.type==="GYM" && l.includes("Altitude")) return "#0D9488";
+          if (d.type==="GYM") return "#2563EB";
+          if (l.includes("AMSTERDAM") || l.includes("Long")) return "#D97706";
+          if (l.includes("Threshold") || l.includes("Speed") || l.includes("Hill") || l.includes("TIME TRIAL")) return "#DC2626";
+          return "#16A34A";
+        };
+
+        const isMobile = window.innerWidth < 700;
+
+        if (isMobile) {
+          // ── MOBILE: vertical list, one row per day ──
+          return (
+            <div style={s.mobList}>
+              {DOW_ORDER.map(dow => {
+                const sessions = dayMap[dow];
+                const isRest = !sessions || sessions.length === 0 || (sessions.length===1 && sessions[0].type==="REST");
+                if (isRest) return (
+                  <div key={dow} style={s.mobDayRest}>
+                    <div style={{...s.mobDowCol, width:80}}>
+                      <span style={{...s.mobDowTxt, fontSize:11}}>{DOW_FULL[dow]}</span>
+                    </div>
+                    <span style={s.mobRestTxt}>Rest</span>
+                  </div>
+                );
+                return sessions.map((day, si) => (
+                  <div key={dow+si} style={{
+                    ...s.mobDay,
+                    borderTop: si > 0 ? "1px dashed #E5E7EB" : undefined,
+                    background: typeBg(day),
+                  }} onClick={() => setActiveDay(day)}>
+                    <div style={{...s.mobDowCol, width:80, background: si===0 ? "transparent" : "transparent"}}>
+                      {si === 0 && <span style={{...s.mobDowTxt, fontSize:11, color:"#374151"}}>{DOW_FULL[dow]}</span>}
+                    </div>
+                    <div style={{width:4, background:typeDot(day), flexShrink:0, borderRadius:2, margin:"8px 0"}} />
+                    <div style={s.mobContent}>
+                      <div style={{...s.mobLabel, color:typeCol(day)}}>
+                        {typeIcon(day)} {day.label}
+                      </div>
+                      <div style={s.mobDetail}>{day.detail}</div>
+                    </div>
+                    <div style={{padding:"0 12px", display:"flex", alignItems:"center", color:"#D1D5DB", fontSize:14}}>›</div>
+                  </div>
+                ));
+              })}
+            </div>
+          );
+        }
+
+        // ── DESKTOP: 7-column calendar ──
+        return (
+          <div>
+            <div style={s.calHdrRow}>
+              {DOW_ORDER.map(d => <div key={d} style={s.calHdrCell}>{d}</div>)}
+            </div>
+            <div style={s.calGrid}>
+              {DOW_ORDER.map(dow => {
+                const sessions = dayMap[dow];
+                if (!sessions || sessions.length === 0 || (sessions.length === 1 && sessions[0].type === "REST")) {
+                  return <div key={dow} style={s.calCellRest}><span style={s.calRestTxt}>Rest</span></div>;
+                }
+                return (
+                  <div key={dow} style={{...s.calCell, background: typeBg(sessions[0])}}>
+                    {sessions.map((day, si) => (
+                      <div key={si} style={{
+                        ...s.calCellInner,
+                        borderTop: si > 0 ? "1px dashed #E5E7EB" : "none",
+                        background: typeBg(day),
+                      }} onClick={() => setActiveDay(day)}>
+                        {si === 0 && <div style={s.calDow}>{dow}</div>}
+                        <div style={{...s.calType, color:typeCol(day)}}>{typeIcon(day)} {day.label}</div>
+                        <div style={s.calDetail}>{day.detail}</div>
+                      </div>
+                    ))}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })()}
+
+      {activeDay && <DayDrawer w={w} day={activeDay} onClose={() => setActiveDay(null)} />}
+    </div>
+  );
+}
+
+function App() {
+  const [filter, setFilter] = useState("all");
+  const phases = [
+    { k:"p1",    name:"Phase 1 — Rehab Foundation",   desc:"Isometrics, bilateral strength, easy volume. Physio gates all progressions.",                  dates:"Wk 1–6 · May 5 – Jun 15"  },
+    { k:"p2",    name:"Phase 2 — Strength + Speed",    desc:"Strides, 100–200m reps, hill sprints from W10. Single-leg strength. 5km TT W12.",              dates:"Wk 7–14 · Jun 16 – Aug 10" },
+    { k:"p3",    name:"Phase 3 — Marathon Build",      desc:"LT threshold blocks 3×12 → 5×10 min. MP long runs. Full plyos. Peak 85km/week.",              dates:"Wk 15–22 · Aug 11 – Oct 5" },
+    { k:"taper", name:"Taper — Race Prep",             desc:"Volume drops 40% then 60%. Intensity held. Race-pace sharpeners.",                             dates:"Wk 23–24 · Oct 6–18"       },
+  ];
+  const filters = [
+    {k:"all",label:"All"},{k:"p1",label:"Phase 1"},{k:"p2",label:"Phase 2"},
+    {k:"p3",label:"Phase 3"},{k:"taper",label:"Taper"},
+  ];
+
+  return (
+    <div style={s.body}>
+      <div style={s.hdr}>
+        <h1 style={s.h1}>AMSTERDAM <em style={s.h1em}>PLAN</em></h1>
+        <div style={s.sub}>Michael · Sub-3:00 · 5km 17:30 · PHT Rehab · 24 Weeks</div>
+        <div style={s.metaRow}>
+          {[["Start","5 May"],["Race","18 Oct"],["Weeks","24"]].map(([l,v])=>(
+            <div key={l} style={s.metaItm}>
+              <label style={s.metaLbl}>{l}</label>
+              <span style={s.metaVal}>{v}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={s.phaseList}>
+        {phases.map(p => {
+          const ps = PHASE_STYLE[p.k];
+          return (
+            <div key={p.k} style={s.phaseRow}>
+              <div style={{...s.phaseDot, background:ps.col}} />
+              <div>
+                <p style={{...s.phaseH, color:ps.col}}>{p.name}</p>
+                <p style={s.phaseP}>{p.desc}</p>
+                <span style={{...s.phaseBadge, color:ps.col, background:ps.bg, border:"1px solid "+ps.bd}}>{p.dates}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div style={s.filterBar}>
+        {filters.map(f => (
+          <button key={f.k} style={{...s.fbtn, ...(filter===f.k?s.fbtnOn:{})}}
+            onClick={() => setFilter(f.k)}>{f.label}</button>
+        ))}
+      </div>
+
+      <div style={s.weekList}>
+        {WEEKS.map(w => <WeekRow key={w.week} w={w} phaseFilter={filter} />)}
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+<script>
+if('serviceWorker' in navigator){
+  const b=new Blob(["const CACHE='ams-plan-v2';\nconst ASSETS=['./','./index.html','https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js','https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js','https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js'];\nself.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS).catch(()=>{})));self.skipWaiting();});\nself.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});\nself.addEventListener('fetch',e=>{if(e.request.url.includes('script.google.com'))return;e.respondWith(caches.match(e.request).then(cached=>{if(cached)return cached;return fetch(e.request).then(res=>{if(res&&res.status===200&&res.type!=='opaque')caches.open(CACHE).then(c=>c.put(e.request,res.clone()));return res;}).catch(()=>cached);}));});"],{type:'application/javascript'});
+  navigator.serviceWorker.register(URL.createObjectURL(b),{scope:'./'}).catch(()=>{});
+}
+</script>
+</body>
+</html>
