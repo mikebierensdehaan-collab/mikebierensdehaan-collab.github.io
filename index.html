@@ -66,7 +66,7 @@ const WEEKS = [
       { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Bilateral lower — moderate load' },
       { day: 'TUE', type: 'RUN', label: 'Easy', detail: '45 min easy Z2' },
       { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Upper body + pull focus' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Posterior chain — PHT-safe only' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '60 min easy Z2' },
       { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
@@ -75,8 +75,8 @@ const WEEKS = [
       dayA: {
         label: 'MON — Lower A (Bilateral)',
         exercises: [
-          { name: 'Barbell Back Squat', sets: '4×6', reps: '6', load: '70% 1RM', notes: '3s descent, 1s pause at bottom, explosive drive up. Brace core hard throughout. Rest 2–3 min between sets.' },
-          { name: 'Hip Thrust (bilateral)', sets: '4×10', reps: '10', load: 'Moderate', notes: 'Upper back on bench, feet flat, barbell across hips with pad. Drive through heels, squeeze glutes hard at top, hold 2s. Rest 90s–2 min between sets.' },
+          { name: 'Barbell Back Squat', sets: '4×6', reps: '6', load: '70% 1RM', notes: '3s descent, 1s pause at bottom, explosive drive up. Brace core hard throughout. Rest 2-3 min between sets.' },
+          { name: 'Hip Thrust (bilateral)', sets: '4×10', reps: '10', load: 'Moderate', notes: 'Upper back on bench, feet flat, barbell across hips with pad. Drive through heels, squeeze glutes hard at top, hold 2s. Rest 90s-2 min between sets.' },
           { name: 'Hip Extension Machine', sets: '3×8', reps: '8', load: 'Moderate', notes: 'Step onto machine, pad behind thigh or knee, extend leg backwards squeezing glute. Full hip extension at top. PHT safe — no forward hip flexion under load. Rest 60s between sets.' },
           { name: 'Leg Press (bilateral)', sets: '3×10', reps: '10', load: 'Moderate', notes: 'Feet shoulder-width on plate, full depth, drive through both heels. Rest 90s between sets.' },
           { name: 'Seated Leg Curl', sets: '3×12', reps: '12', load: 'Moderate', notes: 'Seated machine. Stay in comfortable ROM — do not load at extreme hip flexion. Slow and controlled. Rest 60s between sets.' },
@@ -87,9 +87,9 @@ const WEEKS = [
       dayB: {
         label: 'WED — Upper / Pull',
         exercises: [
-          { name: 'Pull-Up / Lat Pulldown', sets: '4×6–8', reps: '6–8', load: 'BW or added', notes: 'Start from dead hang, pull chest to bar, controlled lower. If can't do pull-ups, use lat pulldown at 80% bodyweight. Rest 90s between sets.' },
+          { name: 'Pull-Up / Lat Pulldown', sets: '4×6-8', reps: '6-8', load: 'BW or added', notes: 'Start from dead hang, pull chest to bar, controlled lower. If can't do pull-ups, use lat pulldown at 80% bodyweight. Rest 90s between sets.' },
           { name: 'Barbell Row (Pendlay)', sets: '4×6', reps: '6', load: '70% 1RM', notes: 'Bar starts on floor each rep. Hinge, pull explosively to lower chest, lower bar to floor under control. Rest 2 min between sets.' },
-          { name: 'Incline DB Press', sets: '3×8', reps: '8', load: 'Moderate', notes: 'Incline 30–45°. Lower to chest with control, press explosively. Important for upper body running posture. Rest 90s between sets.' },
+          { name: 'Incline DB Press', sets: '3×8', reps: '8', load: 'Moderate', notes: 'Incline 30-45°. Lower to chest with control, press explosively. Important for upper body running posture. Rest 90s between sets.' },
           { name: 'Cable Face Pull', sets: '3×15', reps: '15', load: 'Light', notes: 'Cable set at face height. Pull to forehead with elbows high and wide, thumbs back. Key for shoulder health and running posture. Light weight, controlled. Rest 60s between sets.' },
           { name: 'DB Hammer Curl', sets: '3×10', reps: '10', load: 'Moderate', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Tricep Pushdown', sets: '3×12', reps: '12', load: 'Moderate', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
@@ -99,7 +99,7 @@ const WEEKS = [
       dayC: {
         label: 'FRI — Posterior Chain (PHT-safe)',
         exercises: [
-          { name: 'Isometric Wall Hamstring Hold', sets: '5×45s', reps: '45s', load: 'BW', notes: 'PHT REHAB: Sit upright on bench, hip at 90°, press heel firmly into wall at ~70% max effort. Hold 45s. Rest 2–3 min between reps. Zero sharp pain — dull discomfort ≤3/10 only. This is the most important exercise in Phase 1.' },
+          { name: 'Isometric Wall Hamstring Hold', sets: '5×45s', reps: '45s', load: 'BW', notes: 'PHT REHAB: Sit upright on bench, hip at 90°, press heel firmly into wall at ~70% max effort. Hold 45s. Rest 2-3 min between reps. Zero sharp pain — dull discomfort ≤3/10 only. This is the most important exercise in Phase 1.' },
           { name: 'Hip Thrust (bilateral)', sets: '4×10', reps: '10', load: '60% 1RM', notes: 'Drive through both heels, pause at top 2s' },
           { name: 'Back Extension (45°)', sets: '3×12', reps: '12', load: 'BW to light plate', notes: '45° back extension machine. Hinge at hip, lower torso toward floor, drive back up squeezing glutes. Keep spine neutral throughout — do not hyperextend at top. Rest 90s between sets.' },
           { name: 'Nordic Curl (eccentric only)', sets: '3×5', reps: '5', load: 'BW', notes: 'Anchor feet under bench or have partner hold. From kneeling upright, slowly lower your body toward floor using hamstrings as brakes. Catch yourself with hands. Do not pull back up — reset each rep. Stop if PHT discomfort. Rest 2 min between sets.' },
@@ -118,7 +118,7 @@ const WEEKS = [
       { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Add 5% load to squat/Leg Press' },
       { day: 'TUE', type: 'RUN', label: 'Easy', detail: '50 min easy Z2' },
       { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Progressive overload on rows and pulls' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Isometrics to 60s, hip thrusts +5kg' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '70 min easy Z2' },
       { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
@@ -151,7 +151,7 @@ const WEEKS = [
       dayC: {
         label: 'FRI — Posterior Chain (PHT-safe)',
         exercises: [
-          { name: 'Isometric Wall Hamstring Hold', sets: '5×60s', reps: '60s', load: 'BW', notes: 'Progress to 60s per rep if W1 was pain-free. 70% effort. 2–3 min rest between reps. Total isometric time: 5 min.' },
+          { name: 'Isometric Wall Hamstring Hold', sets: '5×60s', reps: '60s', load: 'BW', notes: 'Progress to 60s per rep if W1 was pain-free. 70% effort. 2-3 min rest between reps. Total isometric time: 5 min.' },
           { name: 'Hip Thrust (bilateral)', sets: '4×10', reps: '10', load: '+5kg', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Back Extension (45°)', sets: '3×12', reps: '12', load: '+light plate', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Nordic Curl (eccentric)', sets: '3×6', reps: '6', load: 'BW', notes: '1 extra rep' },
@@ -170,7 +170,7 @@ const WEEKS = [
       { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Squat + Leg Press progress' },
       { day: 'TUE', type: 'RUN', label: 'Easy', detail: '55 min easy Z2' },
       { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Maintain progressive overload' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'First isotonic hamstring work' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '80 min easy Z2' },
       { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
@@ -191,7 +191,7 @@ const WEEKS = [
       dayB: {
         label: 'WED — Upper / Pull',
         exercises: [
-          { name: 'Weighted Pull-Up', sets: '4×5', reps: '5', load: '+5kg', notes: 'Attach weight plate or use dip belt. Dead hang start, full ROM. Rest 2–3 min between sets.' },
+          { name: 'Weighted Pull-Up', sets: '4×5', reps: '5', load: '+5kg', notes: 'Attach weight plate or use dip belt. Dead hang start, full ROM. Rest 2-3 min between sets.' },
           { name: 'Pendlay Row', sets: '4×5', reps: '5', load: '+5% vs W2', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Incline DB Press', sets: '3×8', reps: '8', load: '+2.5kg', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Cable Face Pull', sets: '3×15', reps: '15', load: '+light', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
@@ -203,7 +203,7 @@ const WEEKS = [
       dayC: {
         label: 'FRI — Posterior Chain (Isotonic Intro)',
         exercises: [
-          { name: 'Isometric Wall Hamstring Hold', sets: '4×60s', reps: '60s', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2–3 min rest. If discomfort crept above 3/10 last week, return to 45s.' },
+          { name: 'Isometric Wall Hamstring Hold', sets: '4×60s', reps: '60s', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2-3 min rest. If discomfort crept above 3/10 last week, return to 45s.' },
           { name: 'Lying Leg Curl (bilateral)', sets: '3×12', reps: '12', load: 'Very light', notes: 'First isotonic hamstring work. Light weight, full comfortable ROM only. Go slowly. Stop immediately if PHT provoked. Rest 90s between sets.' },
           { name: 'Hip Thrust (bilateral)', sets: '4×8', reps: '8', load: '+5kg vs W2', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Back Extension', sets: '3×12', reps: '12', load: '+plate', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
@@ -222,7 +222,7 @@ const WEEKS = [
       { day: 'MON', type: 'GYM', label: 'Lower A (Deload)', detail: 'Same exercises, -20% load, -1 set' },
       { day: 'TUE', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — deload' },
       { day: 'WED', type: 'GYM', label: 'Upper (Deload)', detail: '-20% load, -1 set' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Maintain isometrics, reduce hip thrust volume' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '60 min easy Z2 — deload' },
       { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
@@ -252,7 +252,7 @@ const WEEKS = [
       dayC: {
         label: 'FRI — Posterior Chain (Deload)',
         exercises: [
-          { name: 'Isometric Wall Hamstring Hold', sets: '4×60s', reps: '60s', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2–3 min rest between reps.' },
+          { name: 'Isometric Wall Hamstring Hold', sets: '4×60s', reps: '60s', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2-3 min rest between reps.' },
           { name: 'Hip Thrust', sets: '3×10', reps: '10', load: '-20%', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Back Extension', sets: '2×12', reps: '12', load: 'BW', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Nordic Curl (eccentric)', sets: '2×5', reps: '5', load: 'BW', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
@@ -265,12 +265,12 @@ const WEEKS = [
     week: 5, phase: 'p1', date: '2 Jun',
     focus: 'Reload — increase isotonic volume, add single-leg prep',
     km: 43,
-    phtNote: 'If isotonics well-tolerated weeks 3–4: add single-leg prep this week (split squat, no heavy load). Physio sign-off required.',
+    phtNote: 'If isotonics well-tolerated weeks 3-4: add single-leg prep this week (split squat, no heavy load). Physio sign-off required.',
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Return to W3 loads, add split squat intro' },
       { day: 'TUE', type: 'RUN', label: 'Easy', detail: '60 min easy Z2' },
       { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Progress load' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Progress isotonic + add single-leg hip thrust' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '85 min easy Z2' },
       { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
@@ -303,7 +303,7 @@ const WEEKS = [
       dayC: {
         label: 'FRI — Posterior Chain + Single-Leg Intro',
         exercises: [
-          { name: 'Isometric Wall Hold', sets: '3×60s', reps: '60s', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2–3 min rest. Reduce to 3 sets as isotonic volume increases.' },
+          { name: 'Isometric Wall Hold', sets: '3×60s', reps: '60s', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2-3 min rest. Reduce to 3 sets as isotonic volume increases.' },
           { name: 'Lying Leg Curl (bilateral)', sets: '3×10', reps: '10', load: '+light vs W3', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Single-Leg Hip Thrust (BW)', sets: '3×10/leg', reps: '10/leg', load: 'BW only', notes: 'One foot down, other raised. Bodyweight only. Drive through heel, full hip extension at top. PHT: stop immediately if provoked. Rest 90s between sets.' },
           { name: 'Hip Thrust (bilateral)', sets: '3×8', reps: '8', load: 'Maintain W3 load', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
@@ -322,7 +322,7 @@ const WEEKS = [
       { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Test split squat with light load' },
       { day: 'TUE', type: 'RUN', label: 'Easy', detail: '60 min easy Z2' },
       { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Consolidate loads' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Progress single-leg hip thrust with light load' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '90 min easy Z2' },
       { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
@@ -334,7 +334,7 @@ const WEEKS = [
           { name: 'Barbell Back Squat', sets: '4×5', reps: '5', load: '+5% vs W5', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Hip Thrust (bilateral)', sets: '4×8', reps: '8', load: '+5kg vs W5', notes: 'Heavy. Pause at top 1s.' },
           { name: 'Leg Press (bilateral)', sets: '4×8', reps: '8', load: '+5% vs W5', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
-          { name: 'Bulgarian Split Squat', sets: '3×8/leg', reps: '8/leg', load: '10–15kg DB each hand', notes: 'Rear foot on bench, front foot forward. Hold dumbbells at sides. Lower back knee toward floor, drive through front heel. PHT: pain-free only. Rest 90s between sets.' },
+          { name: 'Bulgarian Split Squat', sets: '3×8/leg', reps: '8/leg', load: '10-15kg DB each hand', notes: 'Rear foot on bench, front foot forward. Hold dumbbells at sides. Lower back knee toward floor, drive through front heel. PHT: pain-free only. Rest 90s between sets.' },
           { name: 'Leg Press', sets: '3×10', reps: '10', load: '+5%', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Calf Raise', sets: '4×15', reps: '15', load: '+2.5kg', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Copenhagen Plank', sets: '3×35s', reps: '35s', load: 'BW', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
@@ -355,7 +355,7 @@ const WEEKS = [
       dayC: {
         label: 'FRI — Posterior Chain + Single-Leg Hip Thrust (Loaded)',
         exercises: [
-          { name: 'Single-Leg Hip Thrust', sets: '3×10/leg', reps: '10/leg', load: '20–30kg barbell', notes: 'One foot flat on floor, other leg raised. Drive through heel, squeeze glute at top, 2s hold. PHT: stop if provoked. Rest 90s between sets.' },
+          { name: 'Single-Leg Hip Thrust', sets: '3×10/leg', reps: '10/leg', load: '20-30kg barbell', notes: 'One foot flat on floor, other leg raised. Drive through heel, squeeze glute at top, 2s hold. PHT: stop if provoked. Rest 90s between sets.' },
           { name: 'Lying Leg Curl', sets: '3×10', reps: '10', load: '+light', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Hip Thrust (bilateral)', sets: '3×8', reps: '8', load: 'Heavy', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
           { name: 'Nordic Curl', sets: '3×6', reps: '6', load: 'BW', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
@@ -375,9 +375,9 @@ const WEEKS = [
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Increase BSS load, progress squat' },
       { day: 'MON', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — double day, PM after gym' },
-      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '10×100m strides @ 3:20–3:30/km · full recovery · focus on mechanics' },
+      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '10×100m strides @ 3:20-3:30/km · full recovery · focus on mechanics' },
       { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Progressive overload' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Single-leg hip thrust loaded, add leg curl' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '90 min easy Z2 + 4×100m strides at end' },
       { day: 'SUN', type: 'RUN', label: 'Easy', detail: '40 min easy Z1 — recovery run' },
@@ -427,9 +427,9 @@ const WEEKS = [
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A', detail: '5×5 squat continues, +5%' },
       { day: 'MON', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — double day PM' },
-      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '12×100m @ 3:20–3:25/km · full recovery + 4×200m @ 3:30/km · 90s recovery' },
+      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '12×100m @ 3:20-3:25/km · full recovery + 4×200m @ 3:30/km · 90s recovery' },
       { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: 'Progressive overload' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: '+5% all loaded single-leg' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '100 min easy Z2' },
       { day: 'SUN', type: 'RUN', label: 'Easy', detail: '45 min easy Z1 — recovery run' },
@@ -472,7 +472,7 @@ const WEEKS = [
       { day: 'MON', type: 'GYM', label: 'Lower A (Deload)', detail: '-20% all' },
       { day: 'TUE', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — deload week' },
       { day: 'WED', type: 'GYM', label: 'Upper (Deload)', detail: '-20% all' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior Chain (Deload)', detail: 'Reduce volume, maintain isometrics' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '70 min easy Z2' },
       { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
@@ -503,13 +503,13 @@ const WEEKS = [
     week: 10, phase: 'p2', date: '7 Jul',
     focus: 'Hill sprints introduced — short, explosive, maximal. Strength reloads.',
     km: 60,
-    phtNote: 'Hill sprints begin: 6–8s maximal effort on 6–8% gradient. Walk down recovery. Stop if PHT provoked. Physio to be informed.',
+    phtNote: 'Hill sprints begin: 6-8s maximal effort on 6-8% gradient. Walk down recovery. Stop if PHT provoked. Physio to be informed.',
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A', detail: 'Reload to W8 levels' },
       { day: 'MON', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — double day PM' },
-      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '8×200m @ 3:28–3:32/km · 2 min full recovery — short, fast' },
+      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '8×200m @ 3:28-3:32/km · 2 min full recovery — short, fast' },
       { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: '' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: 'Progress single-leg work' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '95 min easy Z2' },
       { day: 'SUN', type: 'RUN', label: 'Easy', detail: '45 min easy Z1' },
@@ -551,7 +551,7 @@ const WEEKS = [
       { day: 'MON', type: 'RUN', label: 'Easy', detail: '45 min easy Z2 — double day PM' },
       { day: 'TUE', type: 'RUN', label: 'Speed + Hills', detail: 'WU 15 min + 10×8s hill sprints (max effort) + 6×200m @ 3:28/km · 90s recovery + CD 10 min' },
       { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: '+5% main lifts' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior Chain', detail: '+5% all' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '105 min easy Z2 + 6×100m strides' },
       { day: 'SUN', type: 'RUN', label: 'Easy', detail: '50 min easy Z1' },
@@ -622,9 +622,9 @@ const WEEKS = [
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A + Plyo Prep', detail: '5×5 squat + pogo jumps intro' },
       { day: 'MON', type: 'RUN', label: 'Easy', detail: '40 min easy Z2 — double day PM' },
-      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '10×200m @ 3:28–3:32/km · 90s recovery — volume up from W11' },
+      { day: 'TUE', type: 'RUN', label: 'Speed', detail: '10×200m @ 3:28-3:32/km · 90s recovery — volume up from W11' },
       { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: '' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior + Plyo', detail: 'Loaded single-leg + ankle hops' },
       { day: 'SAT', type: 'RUN', label: 'Long Easy', detail: '105 min easy Z2 + 6×100m strides' },
       { day: 'SUN', type: 'RUN', label: 'Easy', detail: '50 min easy Z1' },
@@ -666,7 +666,7 @@ const WEEKS = [
       { day: 'MON', type: 'GYM', label: 'Lower A (Deload)', detail: '-20% all' },
       { day: 'TUE', type: 'RUN', label: 'Easy + Strides', detail: '40 min easy + 6×100m strides' },
       { day: 'WED', type: 'GYM', label: 'Upper (Deload)', detail: '-20%' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior (Deload)', detail: '-20%' },
       { day: 'SAT', type: 'RUN', label: 'Moderate Long', detail: '80 min easy Z2' },
       { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
@@ -677,7 +677,7 @@ const WEEKS = [
         { name: 'Hip Thrust (bilateral)', sets: '3×10', reps: '10', load: '-20%', notes: 'Deload' },
         { name: 'Leg Press', sets: '3×6', reps: '6', load: '-20%', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
         { name: 'Bulgarian Split Squat', sets: '2×8/leg', reps: '8/leg', load: '-20%', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
-        { name: 'Pogo Jumps', sets: '3×15', reps: '15', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2–3 min rest between reps.' },
+        { name: 'Pogo Jumps', sets: '3×15', reps: '15', load: 'BW', notes: 'Hold 60s per rep, 70% effort. 2-3 min rest between reps.' },
         { name: 'Calf Raise', sets: '3×12', reps: '12', load: 'Moderate', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
       ]},
       dayB: { label: 'WED — Upper (Deload)', exercises: [
@@ -704,9 +704,9 @@ const WEEKS = [
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A + Full Plyo', detail: 'Squat + bounding intro' },
       { day: 'MON', type: 'RUN', label: 'Easy', detail: '50 min easy Z2 — double day PM' },
-      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 3×12 min @ LT2 (4:10–4:14/km) · 90s float @ Z2 (not full stop) · CD 15 min — 81 min · float recovery makes this harder than it looks' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 3×12 min @ LT2 (4:10-4:14/km) · 90s float @ Z2 (not full stop) · CD 15 min — 81 min · float recovery makes this harder than it looks' },
       { day: 'WED', type: 'GYM', label: 'Upper / Pull', detail: '' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: 'Single-leg + depth drops' },
       { day: 'FRI', type: 'RUN', label: 'Easy', detail: '60 min easy Z2 — double day PM' },
       { day: 'SAT', type: 'RUN', label: 'Long', detail: '135 min progression: 45 min Z1 → 30 min Z2 → 25 min upper Z2 → 20 min Z3 → 15 min LT2 — each block faster, finish strong' },
@@ -715,7 +715,7 @@ const WEEKS = [
     gym: {
       dayA: { label: 'MON — Lower A + Bounding', exercises: [
         { name: 'Barbell Squat', sets: '5×3', reps: '3', load: '85% 1RM', notes: 'Shift to heavy triples — max strength phase' },
-        { name: 'Barbell Hip Thrust', sets: '4×6', reps: '6', load: 'Heavy', notes: 'Heavy barbell across hips. Explosive drive up, squeeze glutes at top, 2s lower. Rest 2–3 min between sets.' },
+        { name: 'Barbell Hip Thrust', sets: '4×6', reps: '6', load: 'Heavy', notes: 'Heavy barbell across hips. Explosive drive up, squeeze glutes at top, 2s lower. Rest 2-3 min between sets.' },
         { name: 'Leg Press', sets: '4×5', reps: '5', load: 'Heavy', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
         { name: 'Bulgarian Split Squat', sets: '3×6/leg', reps: '6/leg', load: 'Heavy', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
         { name: 'Broad Jump', sets: '4×5', reps: '5', load: 'BW', notes: 'Drive arms, extend fully through hip/knee/ankle, land softly and hold. Rest 2 min between sets.' },
@@ -747,9 +747,9 @@ const WEEKS = [
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A + Plyo', detail: 'Heavy triples + bounding' },
       { day: 'MON', type: 'RUN', label: 'Easy', detail: '50 min easy Z2 — double day PM' },
-      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 2×20 min @ LT2 (4:10–4:14/km) · 3 min float @ Z2 between (not jog stop) · CD 15 min — 68 min · broken tempo format' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 2×20 min @ LT2 (4:10-4:14/km) · 3 min float @ Z2 between (not jog stop) · CD 15 min — 68 min · broken tempo format' },
       { day: 'WED', type: 'GYM', label: 'Upper', detail: '+5% heavy triples' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: '+load' },
       { day: 'FRI', type: 'RUN', label: 'Easy', detail: '65 min easy Z2 — double day PM' },
       { day: 'SAT', type: 'RUN', label: 'Long MP', detail: '145 min cutdown: 40 min Z1 → 35 min Z2 → 30 min upper Z2 → 25 min Z3 → 15 min MP — each 30-min block progressively faster, no recovery between' },
@@ -791,7 +791,7 @@ const WEEKS = [
       { day: 'MON', type: 'GYM', label: 'Lower A (Deload)', detail: '-20%' },
       { day: 'TUE', type: 'RUN', label: 'Easy + Strides', detail: '40 min easy + 6×100m strides — deload' },
       { day: 'WED', type: 'GYM', label: 'Upper (Deload)', detail: '-20%' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior (Deload)', detail: '-20%' },
       { day: 'SAT', type: 'RUN', label: 'Moderate Long', detail: '80 min easy Z2 + 6×20s strides — deload, feel fast without accumulating fatigue' },
       { day: 'SUN', type: 'RUN', label: 'Easy', detail: '45 min easy Z1' },
@@ -828,10 +828,10 @@ const WEEKS = [
       { day: 'MON', type: 'RUN', label: 'Easy', detail: '50 min easy Z2 — double day PM' },
       { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · progressive threshold: 15 min @ 4:18/km → 12 min @ 4:13/km → 9 min @ 4:08/km · 2 min jog rec between · CD 15 min — 81 min · intensity escalates each rep' },
       { day: 'WED', type: 'GYM', label: 'Upper', detail: 'Return to peak loads' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: '' },
       { day: 'FRI', type: 'RUN', label: 'Easy', detail: '65 min easy Z2 — double day PM' },
-      { day: 'SAT', type: 'RUN', label: 'Peak Long', detail: '155 min: 35e + 50mp (4:14–4:16/km) + 15e + 35mp (4:12–4:14/km) + 20e — two sustained MP blocks, second block faster than first' },
+      { day: 'SAT', type: 'RUN', label: 'Peak Long', detail: '155 min: 35e + 50mp (4:14-4:16/km) + 15e + 35mp (4:12-4:14/km) + 20e — two sustained MP blocks, second block faster than first' },
       { day: 'SUN', type: 'RUN', label: 'Easy', detail: '65 min easy Z1' },
     ],
     gym: {
@@ -842,7 +842,7 @@ const WEEKS = [
         { name: 'Bulgarian Split Squat', sets: '3×6/leg', reps: '6/leg', load: '+5kg', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
         { name: 'Broad Jump', sets: '4×5', reps: '5', load: 'BW', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
         { name: 'Bounding', sets: '4×30m', reps: '30m', load: 'BW', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
-        { name: 'Depth Jump (30cm)', sets: '4×5', reps: '5', load: 'BW', notes: 'Step off 30cm box, absorb landing and immediately explode back up as fast as possible. Minimal ground contact. Rest 2–3 min between sets.' },
+        { name: 'Depth Jump (30cm)', sets: '4×5', reps: '5', load: 'BW', notes: 'Step off 30cm box, absorb landing and immediately explode back up as fast as possible. Minimal ground contact. Rest 2-3 min between sets.' },
       ]},
       dayB: { label: 'WED — Upper', exercises: [
         { name: 'Weighted Pull-Up', sets: '5×3', reps: '3', load: '+5% vs W16', notes: 'Machine squat — back against pad, feet forward on platform. Lower to 90° knee angle, drive through heels. Rest 2 min between sets.' },
@@ -869,9 +869,9 @@ const WEEKS = [
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A + Plyo', detail: '+5% all' },
       { day: 'MON', type: 'RUN', label: 'Easy', detail: '55 min easy Z2 — double day PM' },
-      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · LT pyramid: 8 min + 10 min + 14 min + 10 min + 8 min @ LT2 (4:08–4:13/km) · 90s float rec · CD 15 min — 95 min · longest rep at the centre of the set' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · LT pyramid: 8 min + 10 min + 14 min + 10 min + 8 min @ LT2 (4:08-4:13/km) · 90s float rec · CD 15 min — 95 min · longest rep at the centre of the set' },
       { day: 'WED', type: 'GYM', label: 'Upper', detail: '+5%' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: '+load' },
       { day: 'FRI', type: 'RUN', label: 'Easy', detail: '70 min easy Z2 — double day PM' },
       { day: 'SAT', type: 'RUN', label: 'Peak Long', detail: '170 min undulating: 20e + 20mp + 20e + 20mp + 20e + 20mp + 20e + 20mp + 10e — 8 alternating Z2/MP blocks · teaches body to clear lactate at race pace repeatedly' },
@@ -911,12 +911,12 @@ const WEEKS = [
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A + Plyo', detail: 'Maintain peak loads' },
       { day: 'MON', type: 'RUN', label: 'Easy', detail: '55 min easy Z2 — double day PM' },
-      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 35 min continuous @ LT2 (4:08–4:12/km) · 5 min float · 15 min @ MP (4:14–4:16/km) · CD 15 min — 85 min · longest unbroken threshold effort of the plan' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 35 min continuous @ LT2 (4:08-4:12/km) · 5 min float · 15 min @ MP (4:14-4:16/km) · CD 15 min — 85 min · longest unbroken threshold effort of the plan' },
       { day: 'WED', type: 'GYM', label: 'Upper', detail: 'Maintain' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: 'Maintain' },
       { day: 'FRI', type: 'RUN', label: 'Easy', detail: '70 min easy Z2 — double day PM' },
-      { day: 'SAT', type: 'RUN', label: 'Peak Long', detail: '160 min negative split: 80 min easy Z1–Z2 (genuinely easy) → 80 min @ MP (4:12–4:16/km) — no blocks, no recovery, second half is one continuous MP effort' },
+      { day: 'SAT', type: 'RUN', label: 'Peak Long', detail: '160 min negative split: 80 min easy Z1-Z2 (genuinely easy) → 80 min @ MP (4:12-4:16/km) — no blocks, no recovery, second half is one continuous MP effort' },
       { day: 'SUN', type: 'RUN', label: 'Easy', detail: '70 min easy Z1' },
     ],
     gym: {
@@ -951,12 +951,12 @@ const WEEKS = [
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A + Plyo', detail: 'Maintain loads, reduce volume' },
       { day: 'MON', type: 'RUN', label: 'Easy', detail: '50 min easy Z2 — double day PM' },
-      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 6×6 min @ LT2 (4:08–4:10/km) · 90s jog rec · CD 15 min — 81 min · short reps, high density, faster than previous weeks' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 6×6 min @ LT2 (4:08-4:10/km) · 90s jog rec · CD 15 min — 81 min · short reps, high density, faster than previous weeks' },
       { day: 'WED', type: 'GYM', label: 'Upper', detail: '' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior + Explosive', detail: '' },
       { day: 'FRI', type: 'RUN', label: 'Easy', detail: '65 min easy Z2' },
-      { day: 'SAT', type: 'RUN', label: 'Long MP', detail: '150 min broken marathon: 30e + 30mp + 3 float + 30mp + 3 float + 25mp + 3 float + 20mp + 6e — sustained MP load with 3 min floats · simulates km 25–38 fatigue' },
+      { day: 'SAT', type: 'RUN', label: 'Long MP', detail: '150 min broken marathon: 30e + 30mp + 3 float + 30mp + 3 float + 25mp + 3 float + 20mp + 6e — sustained MP load with 3 min floats · simulates km 25-38 fatigue' },
       { day: 'SUN', type: 'RUN', label: 'Easy', detail: '60 min easy Z1' },
     ],
     gym: {
@@ -989,12 +989,12 @@ const WEEKS = [
     km: 68,
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A (Light)', detail: 'Reduce to 3×3, maintain intensity' },
-      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 3×10 min @ MP+5s/km (4:19–4:21/km) · 2 min jog rec · CD 15 min — 60 min · race-pace sharpener not a LT grind · feel controlled and fast' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold', detail: 'WU 15 min · 3×10 min @ MP+5s/km (4:19-4:21/km) · 2 min jog rec · CD 15 min — 60 min · race-pace sharpener not a LT grind · feel controlled and fast' },
       { day: 'WED', type: 'GYM', label: 'Upper (Light)', detail: '' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Posterior (Light)', detail: 'No plyos this week' },
       { day: 'FRI', type: 'RUN', label: 'Easy', detail: '50 min easy Z2' },
-      { day: 'SAT', type: 'RUN', label: 'Last Long', detail: '90 min marathon preview: 25e + 40mp (4:14–4:16/km) + 5 float + 15mp (4:12–4:14/km) + 5e — simulate race-day surge · finish feeling like you have more left' },
+      { day: 'SAT', type: 'RUN', label: 'Last Long', detail: '90 min marathon preview: 25e + 40mp (4:14-4:16/km) + 5 float + 15mp (4:12-4:14/km) + 5e — simulate race-day surge · finish feeling like you have more left' },
       { day: 'SUN', type: 'RUN', label: 'Easy', detail: '50 min easy Z1' },
     ],
     gym: {
@@ -1025,9 +1025,9 @@ const WEEKS = [
     km: 45,
     days: [
       { day: 'MON', type: 'GYM', label: 'Lower A (Taper)', detail: 'Light — 3×3, no fatigue' },
-      { day: 'TUE', type: 'RUN', label: 'Threshold Sharpener', detail: '2×10 min @ MP (4:12–4:15/km) · 3 min jog' },
+      { day: 'TUE', type: 'RUN', label: 'Threshold Sharpener', detail: '2×10 min @ MP (4:12-4:15/km) · 3 min jog' },
       { day: 'WED', type: 'REST', label: 'Rest', detail: '' },
-      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45–60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
+      { day: 'THU', type: 'GYM', label: 'Altitude Bike', detail: '45-60 min altitude bike · trainer-prescribed threshold session · simulated altitude' },
       { day: 'FRI', type: 'GYM', label: 'Upper (Taper)', detail: 'Light — no fatigue' },
       { day: 'SAT', type: 'RUN', label: 'Moderate Long', detail: '90 min — 65e + 25mp' },
       { day: 'SUN', type: 'REST', label: 'Rest', detail: '' },
@@ -1127,7 +1127,7 @@ const s = {
   wTag:      { fontSize:8, letterSpacing:1, textTransform:"uppercase", padding:"3px 7px", borderRadius:3, flexShrink:0, whiteSpace:"nowrap", fontWeight:700 },
   wArr:      { fontSize:10, color:"#9CA3AF", flexShrink:0, transition:"transform .2s" },
 
-  // calendar grid — 7 fixed columns MON–SUN (desktop)
+  // calendar grid — 7 fixed columns MON-SUN (desktop)
   calGrid:   { display:"grid", gridTemplateColumns:"repeat(7,1fr)", gap:0, borderLeft:"1px solid #E5E7EB", borderTop:"1px solid #E5E7EB" },
   calHdrRow: { display:"grid", gridTemplateColumns:"repeat(7,1fr)", background:"#F3F4F6", borderLeft:"1px solid #E5E7EB" },
   calHdrCell:{ padding:"6px 8px", fontSize:9, fontWeight:700, color:"#6B7280", letterSpacing:2, textTransform:"uppercase", borderRight:"1px solid #E5E7EB", borderBottom:"1px solid #E5E7EB" },
@@ -1613,10 +1613,10 @@ function WeekRow({ w, phaseFilter }) {
 function App() {
   const [filter, setFilter] = useState("all");
   const phases = [
-    { k:"p1",    name:"Phase 1 — Rehab Foundation",   desc:"Isometrics, bilateral strength, easy volume. Physio gates all progressions.",                  dates:"Wk 1–6 · May 5 – Jun 15"  },
-    { k:"p2",    name:"Phase 2 — Strength + Speed",    desc:"Strides, 100–200m reps, hill sprints from W10. Single-leg strength. 5km TT W12.",              dates:"Wk 7–14 · Jun 16 – Aug 10" },
-    { k:"p3",    name:"Phase 3 — Marathon Build",      desc:"LT threshold blocks 3×12 → 5×10 min. MP long runs. Full plyos. Peak 85km/week.",              dates:"Wk 15–22 · Aug 11 – Oct 5" },
-    { k:"taper", name:"Taper — Race Prep",             desc:"Volume drops 40% then 60%. Intensity held. Race-pace sharpeners.",                             dates:"Wk 23–24 · Oct 6–18"       },
+    { k:"p1",    name:"Phase 1 — Rehab Foundation",   desc:"Isometrics, bilateral strength, easy volume. Physio gates all progressions.",                  dates:"Wk 1-6 · May 5 - Jun 15"  },
+    { k:"p2",    name:"Phase 2 — Strength + Speed",    desc:"Strides, 100-200m reps, hill sprints from W10. Single-leg strength. 5km TT W12.",              dates:"Wk 7-14 · Jun 16 - Aug 10" },
+    { k:"p3",    name:"Phase 3 — Marathon Build",      desc:"LT threshold blocks 3×12 → 5×10 min. MP long runs. Full plyos. Peak 85km/week.",              dates:"Wk 15-22 · Aug 11 - Oct 5" },
+    { k:"taper", name:"Taper — Race Prep",             desc:"Volume drops 40% then 60%. Intensity held. Race-pace sharpeners.",                             dates:"Wk 23-24 · Oct 6-18"       },
   ];
   const filters = [
     {k:"all",label:"All"},{k:"p1",label:"Phase 1"},{k:"p2",label:"Phase 2"},
